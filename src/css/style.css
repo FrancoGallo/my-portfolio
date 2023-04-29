@@ -11,6 +11,20 @@
 #start {
   display: flex;
   justify-content: space-around;
+  margin: 2.5% 0 2.5% 0;
+}
+#start .hello-world-style-container {
+  padding: 0 2% 0 2%;
+  margin: 0 2% 0 5%;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
+}
+#start .photos-style-container {
+  margin: 0 5% 0 4%;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
 }
 #start .photos-style-container .photos-style {
   display: flex;
@@ -33,7 +47,7 @@
   border-bottom-right-radius: 12px;
 }
 #start .photos-style-container .photos-style img:hover {
-  cursor: crosshair;
+  cursor: pointer;
   width: 300px;
   opacity: 1;
   filter: contrast(120%);

@@ -11,6 +11,7 @@
 #start {
   display: flex;
   justify-content:space-around;
+  margin: 2.5% 0 2.5% 0;
 
   @import "start/hello-world";
   @import "start/photos";
