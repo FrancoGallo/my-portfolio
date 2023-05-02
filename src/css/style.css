@@ -53,4 +53,40 @@
   filter: contrast(120%);
 }
 
+#projects h2 {
+  display: grid;
+  justify-content: center;
+}
+#projects .card-style-container {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
+  margin: 1.5% 5% 2.5% 5%;
+}
+#projects .card-style-container .div-style-image {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+#projects .card-style-container .div-style-image img {
+  height: 270px;
+  width: 429px;
+  border-radius: 12px;
+}
+#projects .card-style-container .div-style-image a {
+  display: grid;
+  justify-content: center;
+}
+#projects .card-style-container .div-style-description {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+#projects .card-style-container .div-style-description a {
+  display: grid;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style.css.map */

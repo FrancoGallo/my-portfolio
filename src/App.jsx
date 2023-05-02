@@ -20,6 +20,7 @@ function App() {
       </article>
 
       <article id="projects">
+        <h2>Proyectos</h2>
         <Card/>
       </article>
 

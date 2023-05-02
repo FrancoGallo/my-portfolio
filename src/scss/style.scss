@@ -16,3 +16,13 @@
   @import "start/hello-world";
   @import "start/photos";
 }
+
+#projects {
+
+  h2 {
+    display: grid;
+    justify-content: center;
+  }
+
+  @import "projects/card";
+}
