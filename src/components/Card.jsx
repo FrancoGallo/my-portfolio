@@ -5,9 +5,9 @@ const Card = () => {
     <section className='card-style-container'>
       <div className='div-style-image'>
         <img src="images/foto 1.jpg" alt="" />
-        <a href='https://github.com/FrancoGallo'>Enlace al GitHub</a>
       </div>
-
+      
+      
       <div className='div-style-description'>
         <a href='https://www.youtube.com/'>Enlace al proyecto</a>
         <p>
@@ -15,6 +15,7 @@ const Card = () => {
           <br></br>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vitae quis dolores rem consectetur quaerat. Officiis, illo. Ea tempora, excepturi non, possimus aliquam quos repellat a numquam ab amet deserunt.
         </p>
+        <a href='https://github.com/FrancoGallo'>Enlace al GitHub</a>
       </div>
     </section>
   )

@@ -1,6 +1,5 @@
 .card-style-container {
     display: flex;
-    justify-content: space-around;
     border-radius: 12px;
     background: #ffffff;
     box-shadow:  
@@ -8,23 +7,19 @@
     -5px -5px 10px #ffffff;
     margin: 1.5% 5% 2.5% 5%;
 
-    .div-style-image{
-        display: flex;
-        flex-direction: column;
-        padding: 1%;
-
-        img {
-            height: 270px;
-            width: 429px;
+    .div-style-image {
+        height: 300px;
+        width: 900px;
+        padding: 2% 3% 2% 2%;
+        
+       img {
+            height: 100%;
+            width: 100%;
             border-radius: 12px;
-        }
-
-        a {
-            display: grid;
-            justify-content: center;
-        }
+            
+        } 
     }
-
+    
     .div-style-description {
         display: flex;
         flex-direction: column;
@@ -33,6 +28,10 @@
         a {
             display: grid;
             justify-content: center;
+        }
+
+        p {
+            text-align: center;
         }
     }
 }
