@@ -26,3 +26,13 @@
 
   @import "projects/card";
 }
+
+#contact {
+
+  h2 {
+    display: grid;
+    justify-content: center;
+  }
+
+  @import "contact/form";
+}

@@ -21,10 +21,13 @@ function App() {
 
       <article id="projects">
         <h2>Proyectos</h2>
+
         <Card/>
       </article>
 
       <article id="contact">
+        <h2>Contacto</h2>
+        
         <Form/>
 
         <Networks/>

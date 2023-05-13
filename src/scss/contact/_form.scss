@@ -1,0 +1,33 @@
+.form-style-container {
+    display: grid;
+    justify-content: center;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow:  
+    5px 5px 10px #666666,
+    -5px -5px 10px #ffffff;
+    width: 425px;
+    padding: 20px 0 25px 0;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+
+        input {
+            height: 27px;
+            margin: 10px;
+        }  
+    }
+
+    div {
+        display: grid;
+        justify-content: center;
+
+        button {
+            width: 100px;
+            padding: 10px;
+        } 
+    }
+}
+
