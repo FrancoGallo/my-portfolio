@@ -5,11 +5,11 @@ import Card from "./components/Card";
 import Photos from "./components/Photos";
 import HelloWorld from "./components/HelloWorld";
 import NavBar from "./components/NavBar";
-import { BrowserRouter as Router } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Router>
+    <>
      <header>
         <NavBar/>
       </header>
@@ -35,7 +35,7 @@ function App() {
       </article>
 
       <Footer/> 
-    </Router>  
+    </>  
   );
 }
 

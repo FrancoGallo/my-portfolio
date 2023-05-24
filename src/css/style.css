@@ -8,10 +8,18 @@
   -ms-box-sizing: border-box;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
 #start {
   display: flex;
   justify-content: space-around;
   margin: 2.5% 0 2.5% 0;
+  padding: 7.5% 0 0 0;
 }
 #start .hello-world-style-container {
   padding: 0 2% 0 2%;
