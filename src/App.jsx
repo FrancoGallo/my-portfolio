@@ -5,6 +5,7 @@ import Card from "./components/Card";
 import Photos from "./components/Photos";
 import HelloWorld from "./components/HelloWorld";
 import NavBar from "./components/NavBar";
+import Location from "./components/Location";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -31,7 +32,11 @@ function App() {
         
         <Form/>
 
-        <Networks/>
+        <section>
+         <Networks/> 
+
+         <Location/>
+        </section>
       </article>
 
       <Footer/> 
