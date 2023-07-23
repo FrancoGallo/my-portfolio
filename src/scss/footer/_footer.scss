@@ -1,0 +1,25 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #686868;
+    padding: 15px 0 15px 0;
+  
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  
+    section{
+      display: grid;
+      grid-template-columns: auto auto;
+  
+      a,span {
+        padding: 5px;
+      }
+  
+      img{
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
