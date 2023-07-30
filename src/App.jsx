@@ -19,6 +19,7 @@ function App() {
         <HelloWorld/>
 
         <Photos/>
+        
       </article>
 
       <article id="projects">

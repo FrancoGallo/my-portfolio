@@ -34,7 +34,6 @@ const Form = () => {
         <div className='input-style'>
           <label for="input" className='text'>Mensaje</label>
           <textarea name="message" placeholder="Escribe lo que quieras" className='input' />
-          {/* <input type="email" name="user_email" /> -- Mensaje no tiene input, este ej es de mail */}
         </div>
         <Button variant="outline-primary" type="submit">Enviar</Button>
       </form>  

@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            padding: 0 2rem 0 2rem;
+            list-style: none;
+            
+            span {
+                cursor: pointer;
+
+                &:hover {
+                    color: #0b23fc;
+                }
+            }
+        }
+    }
+}
