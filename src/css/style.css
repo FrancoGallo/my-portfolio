@@ -134,12 +134,15 @@ header nav ul li span:hover {
 #contact .form-style-container form Button {
   margin-top: 1rem;
 }
+#contact .form-style-container form Button:hover {
+  background-color: #0b23fc;
+}
 #contact .form-style-container form .input-style {
   display: flex;
   flex-direction: column;
   position: static;
 }
-#contact .form-style-container form .input-style .text {
+#contact .form-style-container form .input-style label {
   font-size: 0.75rem;
   color: #0b23fc;
   font-weight: 700;
@@ -150,14 +153,15 @@ header nav ul li span:hover {
   background: #ffffff;
   width: fit-content;
 }
-#contact .form-style-container form .input-style .input {
+#contact .form-style-container form .input-style input, #contact .form-style-container form .input-style textarea {
   padding: 11px 10px;
   font-size: 0.75rem;
-  border: 2px #0b23fc solid;
+  border: 2px #939dff solid;
   border-radius: 5px;
 }
-#contact .form-style-container form .input-style .input:focus {
+#contact .form-style-container form .input-style input:focus, #contact .form-style-container form .input-style textarea:focus {
   outline: none;
+  border-color: #0b23fc;
 }
 
 footer {
