@@ -1,10 +1,12 @@
+import React, { useState } from 'react';
 // import React, { useRef } from 'react';
 // import emailjs from '@emailjs/browser';
 import Button from 'react-bootstrap/Button';
-import { Formik } from 'formik';
+import { Formik, Field, ErrorMessage } from 'formik';
 
 const Form = () => {
-
+  const [submittedForm, formChangeSubmitted] = useState(false)
+  
   // Send function (start) ----->
   // const form = useRef();
 
@@ -23,25 +25,44 @@ const Form = () => {
   return (
     <Formik
       initialValues={{
-        name: '',
-        email: ''
+        user_name:''
       }}
+      
+      // Name validation (start) ----->
+      validate={(results) => {
+        let failed = {}
 
-      onSubmit = {() => {console.log('Formulario enviado')}}
+        if (!results.user_name) {
+          failed.user_name = 'Sin nombre'
+        }
+        else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(results.user_name)) {
+          failed.user_name = 'Con nombre pero mal escrito'
+        }
+
+        return failed
+      }}
+      // Name validation (end) ----->
+
+      onSubmit={(results, {resetForm} ) => {
+        formChangeSubmitted(true)
+        setTimeout(() => formChangeSubmitted(false), 5000)
+        resetForm()
+      }}
     >
-      {({ values, handleSubmit, handleChange }) => (
+      {({ handleSubmit, errors, touched }) => (
         <section className='form-style-container'>
           <form onSubmit={handleSubmit}>
           {/* <form ref={form} onSubmit={sendEmail}> */}
             <div className='input-style'>
               <label for="input">Nombre:</label>
-              <input 
+              <Field 
                 type="text" 
                 placeholder="Aqui tu nombre" 
                 name="user_name"
-                value={values.name}
-                onChange={handleChange}
               />
+              <ErrorMessage name='user_name' component={() => (
+                <div>{errors.user_name}</div>
+              )} />
             </div>  
 
             <div className='input-style'>
@@ -51,13 +72,7 @@ const Form = () => {
 
             <div className='input-style'>
               <label for="input">Mail</label>
-              <input 
-                type="email" 
-                placeholder="Aqui tu mail" 
-                name="user_email"
-                value={values.email}
-                onChange={handleChange}
-              />
+              <input type="email" placeholder="Aqui tu mail" name="user_email"/>
             </div>
 
             <div className='input-style'>
@@ -66,6 +81,8 @@ const Form = () => {
             </div>
 
             <Button variant="outline-primary" type="submit">Enviar</Button>
+
+            {submittedForm && <div>¡Formulario enviado! :D</div>}
           </form>  
         </section>
       )}
