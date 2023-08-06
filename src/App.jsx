@@ -1,6 +1,6 @@
 import Footer from "./components/Footer";
 import Networks from "./components/Networks";
-import Form from "./components/Form";
+import EmailForm from "./components/EmailForm";
 import Card from "./components/Card";
 import Photos from "./components/Photos";
 import HelloWorld from "./components/HelloWorld";
@@ -31,7 +31,7 @@ function App() {
       <article id="contact">
         <h2>Contacto</h2>
         
-        <Form/>
+        <EmailForm/>
 
         <section>
          <Networks/> 
