@@ -1,12 +1,14 @@
 import React from 'react'
+import { getFirestore } from 'firebase/firestore'
 
 const Card = () => {
+  console.log(getFirestore())
+
   return (
     <section className='card-style-container'>
       <div className='div-style-image'>
         <img src="images/foto 1.jpg" alt="" />
       </div>
-      
       
       <div className='div-style-description'>
         <a href='https://www.youtube.com/'>Enlace al proyecto</a>
