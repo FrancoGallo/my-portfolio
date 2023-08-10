@@ -1,25 +1,54 @@
-import React from 'react'
-import { getFirestore } from 'firebase/firestore'
+import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom';
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 
 const Card = () => {
-  console.log(getFirestore())
+  const [data, setData] = useState([])
+  const { idTag } = useParams()
+
+  useEffect(() => {
+    const dataBase = getFirestore()
+
+    if (idTag) {
+      const queryCollection = query(collection(dataBase, 'app'), where('tag', '==', idTag))
+
+        getDocs(queryCollection)
+          .then((answer) => {
+            setData(answer.docs.map(app => ({id: app.id, ...app.data()})))
+          })
+      } 
+      
+    else {
+      const queryCollection = collection(dataBase, 'app')
+            
+        getDocs(queryCollection)
+          .then((answer) => {
+            setData(answer.docs.map(app => ({id: app.id, ...app.data()})))
+          })
+      }
+  }, [idTag])
 
   return (
-    <section className='card-style-container'>
-      <div className='div-style-image'>
-        <img src="images/foto 1.jpg" alt="" />
-      </div>
-      
-      <div className='div-style-description'>
-        <a href='https://www.youtube.com/'>Enlace al proyecto</a>
-        <p>
-          <b>Breve descripcion del proyecto</b> 
-          <br></br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vitae quis dolores rem consectetur quaerat. Officiis, illo. Ea tempora, excepturi non, possimus aliquam quos repellat a numquam ab amet deserunt.
-        </p>
-        <a href='https://github.com/FrancoGallo'>Enlace al GitHub</a>
-      </div>
-    </section>
+    <>
+      {data.map((data) => (
+          <section className='card-style-container' key={data.id}>
+            <div className='div-style-image'>
+              <img src={data.img} alt={data.titleProject} />
+            </div>
+        
+            <div className='div-style-description'>
+              <a href={data.appUrl}>Enlace al proyecto</a>
+              <p>
+                <b>{data.titleProject}</b> 
+                <br></br>
+                {data.description}
+              </p>
+              <a href={data.codeUrl}>Enlace al GitHub</a>
+            </div>
+          </section>
+        ))
+      }
+    </>
   )
 }
 

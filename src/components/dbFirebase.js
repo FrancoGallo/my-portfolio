@@ -5,17 +5,17 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDTSMGzZzRMO8NGsNXyUuO5VAtGqA0jIvw",
-  authDomain: "first-project-reactjs.firebaseapp.com",
-  projectId: "first-project-reactjs",
-  storageBucket: "first-project-reactjs.appspot.com",
-  messagingSenderId: "435854633228",
-  appId: "1:435854633228:web:62d9c01357c7f00869c129"
+  apiKey: "AIzaSyCwba5EQl1bTxueVxUmTQazvSuoXanWpAY",
+  authDomain: "my-portfolio-841cd.firebaseapp.com",
+  projectId: "my-portfolio-841cd",
+  storageBucket: "my-portfolio-841cd.appspot.com",
+  messagingSenderId: "541547723881",
+  appId: "1:541547723881:web:0fc71dc1703300848af6f8"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 export const getFirestoreApp = () => {
-    return app
+    return (app)
 }
