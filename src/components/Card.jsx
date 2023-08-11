@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
+import { getFirestoreApp } from '../db/dbFirebase';
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
+
+getFirestoreApp() // By hosting it here the database can only be loaded in the 'Card.jsx' section
 
 const Card = () => {
   const [data, setData] = useState([])
