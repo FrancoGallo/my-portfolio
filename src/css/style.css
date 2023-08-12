@@ -116,38 +116,40 @@ header nav ul li span:hover {
   text-align: center;
 }
 
-#contact h2 {
-  display: grid;
-  justify-content: center;
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#contact .form-style-container {
+#contact section {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 2rem 0 2rem 0;
+}
+#contact section .form-style-container {
   border-radius: 12px;
   background: #ffffff;
   box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
-  width: 19rem;
+  width: 20rem;
+  padding: 0;
 }
-#contact .form-style-container form {
+#contact section .form-style-container form {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   height: 27rem;
   justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
-#contact .form-style-container form Button {
-  margin-top: 1rem;
-}
-#contact .form-style-container form Button:hover {
-  background-color: #0b23fc;
-}
-#contact .form-style-container form .submitted-form-style {
-  color: #00df00;
-}
-#contact .form-style-container form .input-style {
+#contact section .form-style-container form .input-style {
   display: flex;
   flex-direction: column;
   position: static;
+  width: 100%;
 }
-#contact .form-style-container form .input-style label {
+#contact section .form-style-container form .input-style label {
   font-size: 0.75rem;
   color: #0b23fc;
   font-weight: 700;
@@ -158,20 +160,39 @@ header nav ul li span:hover {
   background: #ffffff;
   width: fit-content;
 }
-#contact .form-style-container form .input-style input, #contact .form-style-container form .input-style textarea {
+#contact section .form-style-container form .input-style input, #contact section .form-style-container form .input-style textarea {
   padding: 11px 10px;
   font-size: 0.75rem;
   border: 2px #939dff solid;
   border-radius: 5px;
 }
-#contact .form-style-container form .input-style input:focus, #contact .form-style-container form .input-style textarea:focus {
+#contact section .form-style-container form .input-style input:focus, #contact section .form-style-container form .input-style textarea:focus {
   outline: none;
   border-color: #0b23fc;
 }
-#contact .form-style-container form .input-style .error-message-style {
+#contact section .form-style-container form .input-style .error-message-style {
   color: #ff0000;
   position: absolute;
   margin-top: 3.8rem;
+}
+#contact section .form-style-container form Button {
+  margin-top: 1rem;
+  width: 60%;
+}
+#contact section .form-style-container form Button:hover {
+  background-color: #0b23fc;
+}
+#contact section .form-style-container form .submitted-form-style {
+  color: #00df00;
+}
+#contact section div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#contact section div .location-style iframe {
+  height: 15rem;
+  width: 20rem;
 }
 
 footer {

@@ -75,7 +75,7 @@ const EmailForm = () => {
       }}
     >
       {({ errors }) => (
-        <section className='form-style-container'>
+        <div className='form-style-container'>
           <Form>
           {/* <form ref={form} onSubmit={sendEmail}> */}
             <div className='input-style'>
@@ -130,7 +130,7 @@ const EmailForm = () => {
 
             {submittedForm && <div className='submitted-form-style'>¡Formulario enviado! :D</div>}
           </Form>  
-        </section>
+        </div>
       )}
     </Formik>
   )

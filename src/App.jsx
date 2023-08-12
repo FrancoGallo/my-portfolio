@@ -30,13 +30,15 @@ function App() {
 
       <article id="contact">
         <h2>Contacto</h2>
-        
-        <EmailForm/>
 
         <section>
-         <Networks/> 
+          <EmailForm/>
 
-         <Location/>
+          <div>
+            <Networks/> 
+
+            <Location/>
+          </div>
         </section>
       </article>
 

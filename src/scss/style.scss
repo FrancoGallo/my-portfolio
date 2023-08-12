@@ -38,13 +38,30 @@ header {
 }
 
 #contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  h2 {
-    display: grid;
-    justify-content: center;
+  section {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 2rem 0 2rem 0;
+
+    @import "contact/emailForm";
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      @import "contact/networks";
+
+      @import "contact/location";
+    }
   }
 
-  @import "contact/emailForm";
+  
 }
 
 @import 'footer/footer';
