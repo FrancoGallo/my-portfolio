@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import { getFirestoreApp } from '../db/dbFirebase';
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
+import Button from 'react-bootstrap/Button';
 
 getFirestoreApp() // By hosting it here the database can only be loaded in the 'Card.jsx' section
 
@@ -40,13 +41,39 @@ const Card = () => {
             </div>
         
             <div className='div-style-description'>
-              <a href={data.appUrl}>Enlace al proyecto</a>
-              <p>
-                <b>{data.titleProject}</b> 
-                <br></br>
-                {data.description}
-              </p>
-              <a href={data.codeUrl}>Enlace al GitHub</a>
+              <Button variant="outline-primary" type="submit">
+                <a href={data.appUrl}>Enlace al proyecto</a>
+              </Button>
+              
+              <div className='text-style'>
+                <p>
+                  <b>{data.titleProject}</b> 
+                  <br/>
+                  {data.description}
+                </p>
+
+                <p>
+                  Tools:
+                  <img src={data.img} alt="" />
+                  <img src={data.img} alt="" />
+                  <img src={data.img1} alt="No database" />
+                  <img src={data.img} alt="" />
+                  <img src={data.img} alt="" />
+                </p>
+              </div>
+
+              {/*
+                Imagen Lenguaje:
+                Imagen Framework:
+                Imagen Base de datos:
+                Imagen Estilo:
+                Imagen Estilo:
+              */}
+              
+
+              <Button variant="outline-primary" type="submit">
+                <a href={data.codeUrl}>Enlace al GitHub</a>
+              </Button>
             </div>
           </section>
         ))

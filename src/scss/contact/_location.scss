@@ -1,7 +1,14 @@
 .location-style {
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow:  
+    5px 5px 10px #666666,
+    -5px -5px 10px #ffffff;
+    padding: 0.5rem;
 
     iframe {
         height: 15rem;
-        width: 20rem;
+        width: 25rem;
+        border-radius: 12px;
     }
 }

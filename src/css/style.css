@@ -82,38 +82,48 @@ header nav ul li span:hover {
   filter: contrast(120%);
 }
 
-#projects h2 {
-  display: grid;
-  justify-content: center;
+#projects {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 #projects .card-style-container {
   display: flex;
   border-radius: 12px;
   background: #ffffff;
   box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
-  margin: 1.5% 5% 2.5% 5%;
+  width: 80%;
+  margin: 1rem 0 1rem 0;
 }
 #projects .card-style-container .div-style-image {
-  height: 300px;
-  width: 900px;
-  padding: 2% 3% 2% 2%;
+  margin: 1.5%;
 }
 #projects .card-style-container .div-style-image img {
-  height: 100%;
-  width: 100%;
+  height: 15rem;
+  width: 25rem;
   border-radius: 12px;
 }
 #projects .card-style-container .div-style-description {
   display: flex;
   flex-direction: column;
-  padding: 1%;
+  margin: 1.5%;
+  align-items: center;
+  justify-content: space-between;
 }
-#projects .card-style-container .div-style-description a {
-  display: grid;
-  justify-content: center;
+#projects .card-style-container .div-style-description button {
+  width: 10rem;
 }
-#projects .card-style-container .div-style-description p {
-  text-align: center;
+#projects .card-style-container .div-style-description .text-style {
+  margin: 0.5rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#projects .card-style-container .div-style-description .text-style img {
+  height: 2rem;
+  width: 3rem;
+  margin: 0 0.5rem 0 0.5rem;
 }
 
 #contact {
@@ -131,7 +141,7 @@ header nav ul li span:hover {
   border-radius: 12px;
   background: #ffffff;
   box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
-  width: 20rem;
+  width: 30rem;
   padding: 0;
 }
 #contact section .form-style-container form {
@@ -190,9 +200,16 @@ header nav ul li span:hover {
   justify-content: space-between;
   flex-direction: column;
 }
+#contact section div .location-style {
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
+  padding: 0.5rem;
+}
 #contact section div .location-style iframe {
   height: 15rem;
-  width: 20rem;
+  width: 25rem;
+  border-radius: 12px;
 }
 
 footer {
