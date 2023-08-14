@@ -2,10 +2,10 @@ import Footer from "./components/Footer";
 import Networks from "./components/Networks";
 import EmailForm from "./components/EmailForm";
 import Card from "./components/Card";
-import Photos from "./components/Photos";
 import HelloWorld from "./components/HelloWorld";
 import NavBar from "./components/NavBar";
 import Location from "./components/Location";
+import Skills from "./components/Skills";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -16,10 +16,13 @@ function App() {
       </header>
 
       <article id="start">
-        <HelloWorld/>
+        <section>
+          <HelloWorld/>
 
-        <Photos/>
-        
+          <img src="images/fotoPrueba.jpg" alt="My face" />
+        </section>
+
+        <Skills/>
       </article>
 
       <article id="projects">

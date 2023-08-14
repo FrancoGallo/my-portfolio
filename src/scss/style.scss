@@ -18,13 +18,11 @@ header {
 }
 
 #start {
-  display: flex;
-  justify-content:space-around;
-  margin: 2.5% 0 2.5% 0;
-  padding: 7.5% 0 0 0;
 
-  @import "start/hello-world";
-  @import "start/photos";
+  img {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 #projects {

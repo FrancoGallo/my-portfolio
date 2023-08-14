@@ -54,22 +54,13 @@ const Card = () => {
 
                 <p>
                   Tools:
-                  <img src={data.img} alt="" />
-                  <img src={data.img} alt="" />
-                  <img src={data.img1} alt="No database" />
-                  <img src={data.img} alt="" />
-                  <img src={data.img} alt="" />
+                  <img src={data.img} alt="Language" />
+                  <img src={data.img} alt="No Framework" />
+                  <img src={data.img} alt="No database" />
+                  <img src={data.img} alt="Style" />
+                  <img src={data.img} alt="Style" />
                 </p>
-              </div>
-
-              {/*
-                Imagen Lenguaje:
-                Imagen Framework:
-                Imagen Base de datos:
-                Imagen Estilo:
-                Imagen Estilo:
-              */}
-              
+              </div>              
 
               <Button variant="outline-primary" type="submit">
                 <a href={data.codeUrl}>Enlace al GitHub</a>
