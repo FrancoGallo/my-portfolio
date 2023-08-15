@@ -1,9 +1,14 @@
-.hello-world-style-container {
-    padding: 0 2% 0 2%;
-    margin: 0 2% 0 5%;
+.skills-style-container {
     border-radius: 12px;
     background: #ffffff;
     box-shadow:  
     5px 5px 10px #666666,
     -5px -5px 10px #ffffff;
+    padding: 1rem;
+    margin: 1rem;
+    width: 80%;
+
+    h4 {
+        margin: 0;
+    }
 }

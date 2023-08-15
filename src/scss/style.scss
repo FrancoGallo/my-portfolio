@@ -9,20 +9,24 @@
   }
 
 header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1;
+  padding: 1rem;
+  // position: fixed;
+  // width: 100%;
+  // top: 0;
+  // z-index: 1;
 
   @import "header/navbar";
 }
 
 #start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
 
-  img {
-    width: 10rem;
-    height: 10rem;
-  }
+  @import "start/helloWorld";
+
+  @import "start/skills";
 }
 
 #projects {

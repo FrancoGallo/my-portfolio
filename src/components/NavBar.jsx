@@ -13,7 +13,7 @@ const NavBar = () => {
       <img src="images/Icono.svg" alt="Icono" />
 
      <ul>
-        <li><span onClick={() => scrollToSection("start")}>Inicio</span></li>
+        <li><span onClick={() => scrollToSection("start")}>Doc</span></li>
         <li><span onClick={() => scrollToSection("projects")}>Proyectos</span></li>
         <li><span onClick={() => scrollToSection("contact")}>Contacto</span></li>
       </ul> 

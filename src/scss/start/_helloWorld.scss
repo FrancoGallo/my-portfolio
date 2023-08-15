@@ -1,0 +1,32 @@
+.helloWorld-style-container {
+    display: flex;
+    width: 80%;
+    
+    .helloWorld-style {
+      margin: 1rem;
+
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        width: 95%;
+      }
+
+      .imgCertificate-container {
+
+        img {
+          height: 5rem;
+          width: 6rem;
+          margin: 0.5rem 0.5rem 0 0;
+        }
+      }
+    }
+
+    .profilePhoto-style {
+      width: 20rem;
+      height: 20rem;
+      margin: 1rem;
+      clip-path: circle(50% at 50% 50%);
+    } 
+}  

@@ -2,8 +2,8 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <section>
-        <h3>Habilidades</h3>
+    <section className='skills-style-container'>
+        <h4>Habilidades</h4>
     </section>
   )
 }

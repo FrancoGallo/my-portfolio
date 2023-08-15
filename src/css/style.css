@@ -9,10 +9,7 @@
 }
 
 header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1;
+  padding: 1rem;
 }
 header nav {
   display: flex;
@@ -36,9 +33,46 @@ header nav ul li span:hover {
   color: #0b23fc;
 }
 
-#start img {
-  width: 10rem;
-  height: 10rem;
+#start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+#start .helloWorld-style-container {
+  display: flex;
+  width: 80%;
+}
+#start .helloWorld-style-container .helloWorld-style {
+  margin: 1rem;
+}
+#start .helloWorld-style-container .helloWorld-style h2 {
+  margin-bottom: 1rem;
+}
+#start .helloWorld-style-container .helloWorld-style p {
+  width: 95%;
+}
+#start .helloWorld-style-container .helloWorld-style .imgCertificate-container img {
+  height: 5rem;
+  width: 6rem;
+  margin: 0.5rem 0.5rem 0 0;
+}
+#start .helloWorld-style-container .profilePhoto-style {
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem;
+  clip-path: circle(50% at 50% 50%);
+}
+#start .skills-style-container {
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
+  padding: 1rem;
+  margin: 1rem;
+  width: 80%;
+}
+#start .skills-style-container h4 {
+  margin: 0;
 }
 
 #projects {
@@ -59,7 +93,7 @@ header nav ul li span:hover {
   margin: 1.5%;
 }
 #projects .card-style-container .div-style-image img {
-  height: 15rem;
+  height: 100%;
   width: 25rem;
   border-radius: 12px;
 }

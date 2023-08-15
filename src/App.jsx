@@ -16,10 +16,10 @@ function App() {
       </header>
 
       <article id="start">
-        <section>
+        <section className="helloWorld-style-container">
           <HelloWorld/>
 
-          <img src="images/fotoPrueba.jpg" alt="My face" />
+          <img className="profilePhoto-style" src="images/fotoPrueba.jpg" alt="My face" />
         </section>
 
         <Skills/>
