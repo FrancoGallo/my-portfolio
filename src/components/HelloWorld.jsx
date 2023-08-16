@@ -1,6 +1,17 @@
-import React from 'react'
+import { useState } from 'react'
+import Modal from './Modal'
 
 const HelloWorld = () => {
+  const [modal1, cambioModal1] = useState (false)
+  const [modal2, cambioModal2] = useState (false)
+  const [modal3, cambioModal3] = useState (false)
+  const [modal4, cambioModal4] = useState (false)
+
+  const img1 = 'images/html.png'
+  const img2 = 'images/javascript.png'
+  const img3 = 'images/react.png'
+  const img4 = 'images/frontend react.png'
+
   return (
     <div className='helloWorld-style'>
       <h2>¡Hola mundo!</h2>
@@ -12,13 +23,17 @@ const HelloWorld = () => {
       </p>
 
       <div className='imgCertificate-container'>
-        <img src="images/html.png" alt="Certificate HTML and CSS" />
-        <img src="images/javascript.png" alt="Certificate JavaScript" />
-        <img src="images/react.png" alt="Certificate React" />
-        <img src="images/frontend react.png" alt="Certificate FrontEnd React" />
+        <img onClick={() => cambioModal1 (true)} src={img1} alt="Certificate HTML and CSS" />
+        <img onClick={() => cambioModal2 (true)} src={img2} alt="Certificate JavaScript" />
+        <img onClick={() => cambioModal3 (true)} src={img3} alt="Certificate React" />
+        <img onClick={() => cambioModal4 (true)} src={img4} alt="Certificate FrontEnd React" />
       </div>
+
+      <Modal img={img1} modalState={modal1} modalChange={cambioModal1}/>
+      <Modal img={img2} modalState={modal2} modalChange={cambioModal2}/>
+      <Modal img={img3} modalState={modal3} modalChange={cambioModal3}/>
+      <Modal img={img4} modalState={modal4} modalChange={cambioModal4}/>
     </div>
-    
   )
 }
 
