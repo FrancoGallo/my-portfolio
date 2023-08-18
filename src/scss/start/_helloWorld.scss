@@ -14,75 +14,31 @@
       }
 
       .imgCertificate-container {
-
-        img {
-          height: 5rem;
-          width: 6rem;
-          margin: 0.5rem 0.5rem 0 0;
-          cursor: pointer;
-          border-radius: 12px;
-
-          &:hover {
-            scale: (1.2);
-            transition: all 400ms ease;
-          }
-
-          &:active {
-            scale: (1.1);
-            transition: all 100ms ease;
-          }
-        }
-      }
-
-      .modal-style-container {
-        position: fixed;
-        background-color: rgb(0, 0, 0, .6);
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        z-index: 1;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        
+        .imgCertificate {
 
-        .modal-style {
-          width: 65%;
-          height: 90%;
-          position: relative;
-
-          img {
-            width: 100%;
-            height: 100%;
-            border-radius: 12px;
-          }
-
-          .button-close {
-            position: absolute;
-            right: 1.5rem;
-            top: 1.5rem;
-            width: 3rem;
-            height: 3rem;
-            border-radius: 12px;
+          .img-style {
+            height: 5rem;
+            width: 6rem;
+            margin: 0.5rem 0.5rem 0 0;
             cursor: pointer;
+            border-radius: 12px;
 
             &:hover {
-              background-color: rgb(255, 255, 255, .10);
+              scale: (1.2);
+              transition: all 400ms ease;
             }
 
             &:active {
-              scale: (0.9);
+              scale: (1.1);
               transition: all 100ms ease;
-            }
-
-            svg {
-              color: #ffffff;
-              width: 100%;
-              height: 100%;
             }
           }
         }
       }
+
+      @import "modal";
     }
 
     .profilePhoto-style {

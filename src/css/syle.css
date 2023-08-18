@@ -55,18 +55,18 @@ header nav ul li span:hover {
 #start .helloWorld-style-container .helloWorld-style .imgCertificate-container {
   display: flex;
 }
-#start .helloWorld-style-container .helloWorld-style .imgCertificate-container .imgCertificate .img-style {
+#start .helloWorld-style-container .helloWorld-style .imgCertificate-container .imgCertificate img {
   height: 5rem;
   width: 6rem;
   margin: 0.5rem 0.5rem 0 0;
   cursor: pointer;
   border-radius: 12px;
 }
-#start .helloWorld-style-container .helloWorld-style .imgCertificate-container .imgCertificate .img-style:hover {
+#start .helloWorld-style-container .helloWorld-style .imgCertificate-container .imgCertificate img:hover {
   scale: 1.2;
   transition: all 400ms ease;
 }
-#start .helloWorld-style-container .helloWorld-style .imgCertificate-container .imgCertificate .img-style:active {
+#start .helloWorld-style-container .helloWorld-style .imgCertificate-container .imgCertificate img:active {
   scale: 1.1;
   transition: all 100ms ease;
 }
@@ -283,4 +283,4 @@ footer section img {
   width: 25px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=syle.css.map */

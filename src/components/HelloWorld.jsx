@@ -2,15 +2,22 @@ import { useState } from 'react'
 import Modal from './Modal'
 
 const HelloWorld = () => {
-  const [modal1, cambioModal1] = useState (false)
-  const [modal2, cambioModal2] = useState (false)
-  const [modal3, cambioModal3] = useState (false)
-  const [modal4, cambioModal4] = useState (false)
+  const [certificates, setCertificates] = useState([
+    { id: '1', content: 'images/html.png', alt: 'Certificate HTML and CSS' },
+    { id: '2', content: 'images/javascript.png', alt: 'Certificate JavaScript' },
+    { id: '3', content: 'images/react.png', alt: 'Certificate React' },
+    { id: '4', content: 'images/frontend react.png', alt: 'Certificate FrontEnd React' },
+  ]);
 
-  const img1 = 'images/html.png'
-  const img2 = 'images/javascript.png'
-  const img3 = 'images/react.png'
-  const img4 = 'images/frontend react.png'
+  const [currentModal, setCurrentModal] = useState(null);
+
+  const openModal = (modalId) => {
+    setCurrentModal(modalId);
+  };
+
+  const closeModal = () => {
+    setCurrentModal(null);
+  };
 
   return (
     <div className='helloWorld-style'>
@@ -23,16 +30,16 @@ const HelloWorld = () => {
       </p>
 
       <div className='imgCertificate-container'>
-        <img onClick={() => cambioModal1 (true)} src={img1} alt="Certificate HTML and CSS" />
-        <img onClick={() => cambioModal2 (true)} src={img2} alt="Certificate JavaScript" />
-        <img onClick={() => cambioModal3 (true)} src={img3} alt="Certificate React" />
-        <img onClick={() => cambioModal4 (true)} src={img4} alt="Certificate FrontEnd React" />
-      </div>
+        {certificates.map((cer) => (
+          <div className='imgCertificate' key={cer.id}>
+            <img className='img-style' onClick={() => openModal(cer.id)} src={cer.content} alt={cer.alt} />
 
-      <Modal img={img1} modalState={modal1} modalChange={cambioModal1}/>
-      <Modal img={img2} modalState={modal2} modalChange={cambioModal2}/>
-      <Modal img={img3} modalState={modal3} modalChange={cambioModal3}/>
-      <Modal img={img4} modalState={modal4} modalChange={cambioModal4}/>
+            {currentModal === cer.id && (
+              <Modal closeModal={closeModal} img={cer.content} alt={cer.alt} />
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
