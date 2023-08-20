@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 // import React, { useRef } from 'react';
 // import emailjs from '@emailjs/browser';
-import Button from 'react-bootstrap/Button';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 const EmailForm = () => {
@@ -126,7 +125,7 @@ const EmailForm = () => {
               )} />
             </div>
 
-            <Button variant="outline-primary" type="submit">Enviar</Button>
+            <button>Enviar</button>
 
             {submittedForm && <div className='submitted-form-style'>¡Formulario enviado! :D</div>}
           </Form>  

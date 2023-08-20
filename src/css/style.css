@@ -160,9 +160,6 @@ header nav ul li span:hover {
   align-items: center;
   justify-content: space-between;
 }
-#projects .card-style-container .div-style-description button {
-  width: 10rem;
-}
 #projects .card-style-container .div-style-description .text-style {
   margin: 0.5rem 0 1rem 0;
   display: flex;
@@ -173,6 +170,75 @@ header nav ul li span:hover {
   height: 2rem;
   width: 3rem;
   margin: 0 0.5rem 0 0.5rem;
+}
+#projects .card-style-container .div-style-description .btn-linkProject {
+  display: flex;
+  width: 11rem;
+  background-color: #ffffff;
+  padding: 0.4rem;
+  border-radius: 12px;
+  border-color: #7b71ff;
+  border-style: solid;
+  align-items: center;
+  cursor: pointer;
+}
+#projects .card-style-container .div-style-description .btn-linkProject:hover {
+  background-color: #7b71ff;
+  transition: all 300ms ease;
+}
+#projects .card-style-container .div-style-description .btn-linkProject:hover .icon-link {
+  color: #ffffff;
+}
+#projects .card-style-container .div-style-description .btn-linkProject:hover a {
+  color: #ffffff;
+}
+#projects .card-style-container .div-style-description .btn-linkProject .icon-link {
+  margin-right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #7b71ff;
+}
+#projects .card-style-container .div-style-description .btn-linkProject .icon-link svg {
+  width: 100%;
+  height: 100%;
+}
+#projects .card-style-container .div-style-description .btn-linkProject a {
+  color: #7b71ff;
+  text-decoration: none;
+}
+#projects .card-style-container .div-style-description .btn-gitHub {
+  display: flex;
+  width: 10.5rem;
+  background-color: #ffffff;
+  padding: 0.4rem;
+  border-radius: 12px;
+  border-color: #000000;
+  border-style: solid;
+  align-items: center;
+  cursor: pointer;
+}
+#projects .card-style-container .div-style-description .btn-gitHub:hover {
+  background-color: #000000;
+  transition: all 300ms ease;
+}
+#projects .card-style-container .div-style-description .btn-gitHub:hover .icon-gitHub {
+  color: #ffffff;
+}
+#projects .card-style-container .div-style-description .btn-gitHub:hover a {
+  color: #ffffff;
+}
+#projects .card-style-container .div-style-description .btn-gitHub .icon-gitHub {
+  margin-right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#projects .card-style-container .div-style-description .btn-gitHub .icon-gitHub svg {
+  width: 100%;
+  height: 100%;
+}
+#projects .card-style-container .div-style-description .btn-gitHub a {
+  color: #000000;
+  text-decoration: none;
 }
 
 #contact {
