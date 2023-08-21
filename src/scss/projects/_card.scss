@@ -1,10 +1,9 @@
 .card-style-container {
     display: flex;
     border-radius: 12px;
-    background: #ffffff;
+    background-color: #1c1c1c;
     box-shadow:  
-    5px 5px 10px #666666,
-    -5px -5px 10px #ffffff;
+    10px 10px 10px #0c0c0c;
     width: 80%;
     margin: 1rem 0 1rem 0;
 
@@ -41,17 +40,19 @@
         .btn-linkProject {
             display: flex;
             width: 11rem;
-            background-color: #ffffff;
             padding: 0.4rem;
-            border-radius: 12px;
             border-color: #7b71ff;
             border-style: solid;
             align-items: center;
             cursor: pointer;
+            border-radius: 12px;
+            background-color: #1c1c1c;
+            box-shadow:  
+            10px 10px 10px #0c0c0c;
 
             &:hover {
                 background-color: #7b71ff;
-                transition: all 300ms ease;
+                transition: all 200ms ease;
 
                 .icon-link {
                     color: #ffffff;
@@ -83,17 +84,20 @@
         .btn-gitHub {
             display: flex;
             width: 10.5rem;
-            background-color: #ffffff;
             padding: 0.4rem;
             border-radius: 12px;
             border-color: #000000;
             border-style: solid;
             align-items: center;
             cursor: pointer;
+            border-radius: 12px;
+            background-color: #ffffff;
+            box-shadow:  
+            10px 10px 10px #0c0c0c;
 
             &:hover {
                 background-color: #000000;
-                transition: all 300ms ease;
+                transition: all 200ms ease;
 
                 .icon-gitHub {
                     color: #ffffff;
@@ -108,6 +112,7 @@
                 margin-right: 0.5rem;
                 width: 1.5rem;
                 height: 1.5rem;
+                color: #000000;
 
                 svg {
                     width: 100%;

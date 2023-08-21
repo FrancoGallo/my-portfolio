@@ -8,57 +8,62 @@
     -ms-box-sizing: border-box;
   }
 
-header {
-  padding: 1rem;
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
 
-  @import "header/navbar";
-}
-
-#start {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 0 1rem 0;
-
-  @import "start/helloWorld";
-
-  @import "start/skills";
-}
-
-#projects {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-
-  @import "projects/card";
-}
-
-#contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  section {
+  header {
+    padding: 1rem;
+  
+    @import "header/navbar";
+  }
+  
+  #start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+  
+    @import "start/helloWorld";
+  
+    @import "start/skills";
+  }
+  
+  #projects {
     display: flex;
     width: 100%;
-    justify-content: space-around;
-    padding: 2rem 0 2rem 0;
-
-    @import "contact/emailForm";
-
-    div {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-
-      @import "contact/networks";
-
-      @import "contact/location";
-    }
-  }
-
+    flex-direction: column;
+    align-items: center;
   
+    @import "projects/card";
+  }
+  
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    section {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      padding: 2rem 0 2rem 0;
+  
+      @import "contact/emailForm";
+  
+      div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+  
+        @import "contact/networks";
+  
+        @import "contact/location";
+      }
+    }
+  
+    
+  }
+  
+  @import 'footer/footer';
 }
-
-@import 'footer/footer';

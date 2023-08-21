@@ -1,9 +1,8 @@
 .form-style-container {
     border-radius: 12px;
-    background: #ffffff;
+    background-color: #1c1c1c;
     box-shadow:  
-    5px 5px 10px #666666,
-    -5px -5px 10px #ffffff;
+    10px 10px 10px #0c0c0c;
     width: 30rem;
     padding: 0;
 
@@ -24,13 +23,13 @@
 
             label {
                 font-size: 0.75rem;
-                color: #0b23fc;
+                color: #939dff;
                 font-weight: 700;
                 position: relative;
                 top: 0.5rem;
                 margin: 0 0 0 7px;
                 padding: 0 3px;
-                background: #ffffff;
+                background-color: #1c1c1c;
                 width: fit-content;
             }
 
@@ -39,6 +38,8 @@
                 font-size: 0.75rem;
                 border: 2px #939dff solid;
                 border-radius: 5px;
+                background-color: #1c1c1c;
+                color: #ffffff;
 
                 &:focus {
                     outline: none;

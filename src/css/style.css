@@ -8,69 +8,72 @@
   -ms-box-sizing: border-box;
 }
 
-header {
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+body header {
   padding: 1rem;
 }
-header nav {
+body header nav {
   display: flex;
   justify-content: space-between;
 }
-header nav img {
+body header nav img {
   width: 40px;
   height: 40px;
 }
-header nav ul {
+body header nav ul {
   display: flex;
 }
-header nav ul li {
+body header nav ul li {
   padding: 0 2rem 0 2rem;
   list-style: none;
 }
-header nav ul li span {
+body header nav ul li span {
   cursor: pointer;
 }
-header nav ul li span:hover {
+body header nav ul li span:hover {
   color: #0b23fc;
 }
-
-#start {
+body #start {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem 0 1rem 0;
 }
-#start .helloWorld-style-container {
+body #start .helloWorld-style-container {
   display: flex;
   width: 80%;
 }
-#start .helloWorld-style-container .helloWorld-style {
+body #start .helloWorld-style-container .helloWorld-style {
   margin: 1rem;
 }
-#start .helloWorld-style-container .helloWorld-style h2 {
+body #start .helloWorld-style-container .helloWorld-style h2 {
   margin-bottom: 1rem;
 }
-#start .helloWorld-style-container .helloWorld-style p {
+body #start .helloWorld-style-container .helloWorld-style p {
   width: 95%;
 }
-#start .helloWorld-style-container .helloWorld-style .imgCertificate-container {
+body #start .helloWorld-style-container .helloWorld-style .imgCertificate-container {
   display: flex;
 }
-#start .helloWorld-style-container .helloWorld-style .imgCertificate-container .imgCertificate .img-style {
+body #start .helloWorld-style-container .helloWorld-style .imgCertificate-container .imgCertificate .img-style {
   height: 5rem;
   width: 6rem;
   margin: 0.5rem 0.5rem 0 0;
   cursor: pointer;
   border-radius: 12px;
 }
-#start .helloWorld-style-container .helloWorld-style .imgCertificate-container .imgCertificate .img-style:hover {
+body #start .helloWorld-style-container .helloWorld-style .imgCertificate-container .imgCertificate .img-style:hover {
   scale: 1.2;
   transition: all 400ms ease;
 }
-#start .helloWorld-style-container .helloWorld-style .imgCertificate-container .imgCertificate .img-style:active {
+body #start .helloWorld-style-container .helloWorld-style .imgCertificate-container .imgCertificate .img-style:active {
   scale: 1.1;
   transition: all 100ms ease;
 }
-#start .helloWorld-style-container .helloWorld-style .modal-style-container {
+body #start .helloWorld-style-container .helloWorld-style .modal-style-container {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.6);
   width: 100vw;
@@ -82,17 +85,17 @@ header nav ul li span:hover {
   justify-content: center;
   align-items: center;
 }
-#start .helloWorld-style-container .helloWorld-style .modal-style-container .modal-style {
+body #start .helloWorld-style-container .helloWorld-style .modal-style-container .modal-style {
   width: 65%;
   height: 90%;
   position: relative;
 }
-#start .helloWorld-style-container .helloWorld-style .modal-style-container .modal-style img {
+body #start .helloWorld-style-container .helloWorld-style .modal-style-container .modal-style img {
   width: 100%;
   height: 100%;
   border-radius: 12px;
 }
-#start .helloWorld-style-container .helloWorld-style .modal-style-container .modal-style .button-close {
+body #start .helloWorld-style-container .helloWorld-style .modal-style-container .modal-style .button-close {
   position: absolute;
   right: 1.5rem;
   top: 1.5rem;
@@ -101,165 +104,169 @@ header nav ul li span:hover {
   border-radius: 12px;
   cursor: pointer;
 }
-#start .helloWorld-style-container .helloWorld-style .modal-style-container .modal-style .button-close:hover {
+body #start .helloWorld-style-container .helloWorld-style .modal-style-container .modal-style .button-close:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-#start .helloWorld-style-container .helloWorld-style .modal-style-container .modal-style .button-close:active {
+body #start .helloWorld-style-container .helloWorld-style .modal-style-container .modal-style .button-close:active {
   scale: 0.9;
   transition: all 100ms ease;
 }
-#start .helloWorld-style-container .helloWorld-style .modal-style-container .modal-style .button-close svg {
+body #start .helloWorld-style-container .helloWorld-style .modal-style-container .modal-style .button-close svg {
   color: #ffffff;
   width: 100%;
   height: 100%;
 }
-#start .helloWorld-style-container .profilePhoto-style {
+body #start .helloWorld-style-container .profilePhoto-style {
   width: 20rem;
   height: 20rem;
   margin: 1rem;
-  clip-path: circle(50% at 50% 50%);
+  border-radius: 170px;
+  background-color: #1c1c1c;
+  box-shadow: 15px 15px 10px #0c0c0c;
 }
-#start .skills-style-container {
+body #start .skills-style-container {
   border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
+  background-color: #1c1c1c;
+  box-shadow: 10px 10px 10px #0c0c0c;
   padding: 1rem;
   margin: 1rem;
   width: 80%;
 }
-#start .skills-style-container h4 {
+body #start .skills-style-container h4 {
   margin: 0;
 }
-
-#projects {
+body #projects {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
 }
-#projects .card-style-container {
+body #projects .card-style-container {
   display: flex;
   border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
+  background-color: #1c1c1c;
+  box-shadow: 10px 10px 10px #0c0c0c;
   width: 80%;
   margin: 1rem 0 1rem 0;
 }
-#projects .card-style-container .div-style-image {
+body #projects .card-style-container .div-style-image {
   margin: 1.5%;
 }
-#projects .card-style-container .div-style-image img {
+body #projects .card-style-container .div-style-image img {
   height: 100%;
   width: 25rem;
   border-radius: 12px;
 }
-#projects .card-style-container .div-style-description {
+body #projects .card-style-container .div-style-description {
   display: flex;
   flex-direction: column;
   margin: 1.5%;
   align-items: center;
   justify-content: space-between;
 }
-#projects .card-style-container .div-style-description .text-style {
+body #projects .card-style-container .div-style-description .text-style {
   margin: 0.5rem 0 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#projects .card-style-container .div-style-description .text-style img {
+body #projects .card-style-container .div-style-description .text-style img {
   height: 2rem;
   width: 3rem;
   margin: 0 0.5rem 0 0.5rem;
 }
-#projects .card-style-container .div-style-description .btn-linkProject {
+body #projects .card-style-container .div-style-description .btn-linkProject {
   display: flex;
   width: 11rem;
-  background-color: #ffffff;
   padding: 0.4rem;
-  border-radius: 12px;
   border-color: #7b71ff;
   border-style: solid;
   align-items: center;
   cursor: pointer;
+  border-radius: 12px;
+  background-color: #1c1c1c;
+  box-shadow: 10px 10px 10px #0c0c0c;
 }
-#projects .card-style-container .div-style-description .btn-linkProject:hover {
+body #projects .card-style-container .div-style-description .btn-linkProject:hover {
   background-color: #7b71ff;
-  transition: all 300ms ease;
+  transition: all 200ms ease;
 }
-#projects .card-style-container .div-style-description .btn-linkProject:hover .icon-link {
+body #projects .card-style-container .div-style-description .btn-linkProject:hover .icon-link {
   color: #ffffff;
 }
-#projects .card-style-container .div-style-description .btn-linkProject:hover a {
+body #projects .card-style-container .div-style-description .btn-linkProject:hover a {
   color: #ffffff;
 }
-#projects .card-style-container .div-style-description .btn-linkProject .icon-link {
+body #projects .card-style-container .div-style-description .btn-linkProject .icon-link {
   margin-right: 0.5rem;
   width: 1.5rem;
   height: 1.5rem;
   color: #7b71ff;
 }
-#projects .card-style-container .div-style-description .btn-linkProject .icon-link svg {
+body #projects .card-style-container .div-style-description .btn-linkProject .icon-link svg {
   width: 100%;
   height: 100%;
 }
-#projects .card-style-container .div-style-description .btn-linkProject a {
+body #projects .card-style-container .div-style-description .btn-linkProject a {
   color: #7b71ff;
   text-decoration: none;
 }
-#projects .card-style-container .div-style-description .btn-gitHub {
+body #projects .card-style-container .div-style-description .btn-gitHub {
   display: flex;
   width: 10.5rem;
-  background-color: #ffffff;
   padding: 0.4rem;
   border-radius: 12px;
   border-color: #000000;
   border-style: solid;
   align-items: center;
   cursor: pointer;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 10px #0c0c0c;
 }
-#projects .card-style-container .div-style-description .btn-gitHub:hover {
+body #projects .card-style-container .div-style-description .btn-gitHub:hover {
   background-color: #000000;
-  transition: all 300ms ease;
+  transition: all 200ms ease;
 }
-#projects .card-style-container .div-style-description .btn-gitHub:hover .icon-gitHub {
+body #projects .card-style-container .div-style-description .btn-gitHub:hover .icon-gitHub {
   color: #ffffff;
 }
-#projects .card-style-container .div-style-description .btn-gitHub:hover a {
+body #projects .card-style-container .div-style-description .btn-gitHub:hover a {
   color: #ffffff;
 }
-#projects .card-style-container .div-style-description .btn-gitHub .icon-gitHub {
+body #projects .card-style-container .div-style-description .btn-gitHub .icon-gitHub {
   margin-right: 0.5rem;
   width: 1.5rem;
   height: 1.5rem;
+  color: #000000;
 }
-#projects .card-style-container .div-style-description .btn-gitHub .icon-gitHub svg {
+body #projects .card-style-container .div-style-description .btn-gitHub .icon-gitHub svg {
   width: 100%;
   height: 100%;
 }
-#projects .card-style-container .div-style-description .btn-gitHub a {
+body #projects .card-style-container .div-style-description .btn-gitHub a {
   color: #000000;
   text-decoration: none;
 }
-
-#contact {
+body #contact {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#contact section {
+body #contact section {
   display: flex;
   width: 100%;
   justify-content: space-around;
   padding: 2rem 0 2rem 0;
 }
-#contact section .form-style-container {
+body #contact section .form-style-container {
   border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
+  background-color: #1c1c1c;
+  box-shadow: 10px 10px 10px #0c0c0c;
   width: 30rem;
   padding: 0;
 }
-#contact section .form-style-container form {
+body #contact section .form-style-container form {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -268,83 +275,84 @@ header nav ul li span:hover {
   width: 100%;
   align-items: center;
 }
-#contact section .form-style-container form .input-style {
+body #contact section .form-style-container form .input-style {
   display: flex;
   flex-direction: column;
   position: static;
   width: 100%;
 }
-#contact section .form-style-container form .input-style label {
+body #contact section .form-style-container form .input-style label {
   font-size: 0.75rem;
-  color: #0b23fc;
+  color: #939dff;
   font-weight: 700;
   position: relative;
   top: 0.5rem;
   margin: 0 0 0 7px;
   padding: 0 3px;
-  background: #ffffff;
+  background-color: #1c1c1c;
   width: fit-content;
 }
-#contact section .form-style-container form .input-style input, #contact section .form-style-container form .input-style textarea {
+body #contact section .form-style-container form .input-style input, body #contact section .form-style-container form .input-style textarea {
   padding: 11px 10px;
   font-size: 0.75rem;
   border: 2px #939dff solid;
   border-radius: 5px;
+  background-color: #1c1c1c;
+  color: #ffffff;
 }
-#contact section .form-style-container form .input-style input:focus, #contact section .form-style-container form .input-style textarea:focus {
+body #contact section .form-style-container form .input-style input:focus, body #contact section .form-style-container form .input-style textarea:focus {
   outline: none;
   border-color: #0b23fc;
 }
-#contact section .form-style-container form .input-style .error-message-style {
+body #contact section .form-style-container form .input-style .error-message-style {
   color: #ff0000;
   position: absolute;
   margin-top: 3.8rem;
 }
-#contact section .form-style-container form Button {
+body #contact section .form-style-container form Button {
   margin-top: 1rem;
   width: 60%;
 }
-#contact section .form-style-container form Button:hover {
+body #contact section .form-style-container form Button:hover {
   background-color: #0b23fc;
 }
-#contact section .form-style-container form .submitted-form-style {
+body #contact section .form-style-container form .submitted-form-style {
   color: #00df00;
 }
-#contact section div {
+body #contact section div {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-#contact section div .location-style {
+body #contact section div .location-style {
   border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
+  background-color: #1c1c1c;
+  box-shadow: 10px 10px 10px #0c0c0c;
   padding: 0.5rem;
 }
-#contact section div .location-style iframe {
+body #contact section div .location-style iframe {
   height: 15rem;
   width: 25rem;
   border-radius: 12px;
 }
-
-footer {
+body footer {
   display: flex;
   justify-content: space-around;
   background-color: #686868;
   padding: 15px 0 15px 0;
 }
-footer img {
+body footer img {
   height: 50px;
   width: 50px;
 }
-footer section {
+body footer section {
   display: grid;
   grid-template-columns: auto auto;
 }
-footer section a, footer section span {
+body footer section a, body footer section span {
   padding: 5px;
 }
-footer section img {
+body footer section img {
   height: 25px;
   width: 25px;
 }
