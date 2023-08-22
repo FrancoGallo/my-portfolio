@@ -1,6 +1,15 @@
 nav {
     display: flex;
     justify-content: space-between;
+    border-radius: 12px;
+    background: linear-gradient(to right, #30608d, #3d4561);
+    box-shadow:  
+    10px 10px 10px #0c0c0c;
+    width: 80%;
+    padding: 0.8rem;
+    align-items: center;
+    margin-top: 1rem;
+    // position: fixed;
 
     img {
         width: 40px;

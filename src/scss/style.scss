@@ -13,8 +13,10 @@ body {
   color: #ffffff;
 
   header {
-    padding: 1rem;
-  
+    display: flex;
+    justify-content: center;
+    // height: 5rem;
+
     @import "header/navbar";
   }
   

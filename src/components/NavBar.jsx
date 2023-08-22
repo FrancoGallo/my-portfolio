@@ -10,7 +10,7 @@ function scrollToSection(sectionId) {
 const NavBar = () => {
   return (
     <nav>
-      <img src="images/Icono.svg" alt="Icono" />
+     <img src="images/Icono.svg" alt="Icono" />
 
      <ul>
         <li><span onClick={() => scrollToSection("start")}>Doc</span></li>
