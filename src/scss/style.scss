@@ -12,60 +12,13 @@ body {
   background-color: #1e1e1e;
   color: #ffffff;
 
-  header {
-    display: flex;
-    justify-content: center;
-    // height: 5rem;
-
-    @import "header/navbar";
-  }
+  @import 'Section_Header_Styles/header';
   
-  #start {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0 1rem 0;
+  @import 'Section_Start_Styles/start';
   
-    @import "start/helloWorld";
+  @import 'Section_Projects_Styles/projects';
   
-    @import "start/skills";
-  }
+  @import 'Section_Contact_Styles/contact';
   
-  #projects {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  
-    @import "projects/card";
-  }
-  
-  #contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    section {
-      display: flex;
-      width: 100%;
-      justify-content: space-around;
-      padding: 2rem 0 2rem 0;
-  
-      @import "contact/emailForm";
-  
-      div {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-  
-        @import "contact/networks";
-  
-        @import "contact/location";
-      }
-    }
-  
-    
-  }
-  
-  @import 'footer/footer';
+  @import 'Section_Footer_Styles/footer';
 }

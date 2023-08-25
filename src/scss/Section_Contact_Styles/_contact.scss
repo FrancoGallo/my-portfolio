@@ -1,0 +1,24 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    section {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      padding: 2rem 0 2rem 0;
+  
+      @import "componentsStyle/emailForm";
+  
+      div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+  
+        @import "componentsStyle/networks";
+  
+        @import "componentsStyle/location";
+      }
+    } 
+  }

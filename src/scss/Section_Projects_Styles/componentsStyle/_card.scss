@@ -7,7 +7,7 @@
     width: 80%;
     margin: 1rem 0 1rem 0;
 
-    .div-style-image {
+    .image-style {
         margin: 1.5%;
         
        img {
@@ -17,25 +17,11 @@
         } 
     }
     
-    .div-style-description {
+    .description-style {
         display: flex;
         flex-direction: column;
         margin: 1.5%;
-        align-items: center;
         justify-content: space-between;
-
-        .text-style {
-            margin: 0.5rem 0 1rem 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            img {
-                height: 2rem;
-                width: 3rem;
-                margin: 0 0.5rem 0 0.5rem;
-            }
-        }
 
         .btn-container {
             width: 100%;
@@ -45,6 +31,23 @@
             @import 'btnLinkProject';
 
             @import 'btnGitHub';
+        }
+
+        .tools-styles {
+
+            ul {
+                list-style: none;
+                display: flex;
+
+                li {
+                    margin: 0 0.5rem;
+
+                    img {
+                        height: 2rem;
+                        width: 3rem;
+                    }
+                }
+            }
         }
     }
 }

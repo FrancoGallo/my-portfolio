@@ -158,38 +158,26 @@ body #projects .card-style-container {
   width: 80%;
   margin: 1rem 0 1rem 0;
 }
-body #projects .card-style-container .div-style-image {
+body #projects .card-style-container .image-style {
   margin: 1.5%;
 }
-body #projects .card-style-container .div-style-image img {
+body #projects .card-style-container .image-style img {
   height: 100%;
   width: 25rem;
   border-radius: 12px;
 }
-body #projects .card-style-container .div-style-description {
+body #projects .card-style-container .description-style {
   display: flex;
   flex-direction: column;
   margin: 1.5%;
-  align-items: center;
   justify-content: space-between;
 }
-body #projects .card-style-container .div-style-description .text-style {
-  margin: 0.5rem 0 1rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-body #projects .card-style-container .div-style-description .text-style img {
-  height: 2rem;
-  width: 3rem;
-  margin: 0 0.5rem 0 0.5rem;
-}
-body #projects .card-style-container .div-style-description .btn-container {
+body #projects .card-style-container .description-style .btn-container {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-linkProject {
+body #projects .card-style-container .description-style .btn-container .btn-linkProject {
   display: flex;
   width: 11rem;
   padding: 0.4rem;
@@ -203,31 +191,35 @@ body #projects .card-style-container .div-style-description .btn-container .btn-
   text-decoration: none;
   margin-right: 2rem;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-linkProject:hover {
+body #projects .card-style-container .description-style .btn-container .btn-linkProject:hover {
   background-color: #7b71ff;
   transition: all 200ms ease;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-linkProject:hover .icon-link {
+body #projects .card-style-container .description-style .btn-container .btn-linkProject:hover .icon-link {
   color: #ffffff;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-linkProject:hover span {
+body #projects .card-style-container .description-style .btn-container .btn-linkProject:hover span {
   color: #ffffff;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-linkProject .icon-link {
+body #projects .card-style-container .description-style .btn-container .btn-linkProject:active {
+  scale: 0.9;
+  transition: all 100ms ease;
+}
+body #projects .card-style-container .description-style .btn-container .btn-linkProject .icon-link {
   margin-right: 0.5rem;
   width: 1.5rem;
   height: 1.5rem;
   color: #7b71ff;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-linkProject .icon-link svg {
+body #projects .card-style-container .description-style .btn-container .btn-linkProject .icon-link svg {
   width: 100%;
   height: 100%;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-linkProject span {
+body #projects .card-style-container .description-style .btn-container .btn-linkProject span {
   color: #7b71ff;
   text-decoration: none;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-gitHub {
+body #projects .card-style-container .description-style .btn-container .btn-gitHub {
   display: flex;
   width: 10.5rem;
   padding: 0.4rem;
@@ -241,32 +233,43 @@ body #projects .card-style-container .div-style-description .btn-container .btn-
   box-shadow: 10px 10px 10px #0c0c0c;
   text-decoration: none;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-gitHub:hover {
+body #projects .card-style-container .description-style .btn-container .btn-gitHub:hover {
   background-color: #000000;
   transition: all 200ms ease;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-gitHub:hover .icon-gitHub {
+body #projects .card-style-container .description-style .btn-container .btn-gitHub:hover .icon-gitHub {
   color: #ffffff;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-gitHub:hover span {
+body #projects .card-style-container .description-style .btn-container .btn-gitHub:hover span {
   color: #ffffff;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-gitHub:active {
+body #projects .card-style-container .description-style .btn-container .btn-gitHub:active {
   scale: 0.9;
-  transition: all 150ms ease;
+  transition: all 100ms ease;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-gitHub .icon-gitHub {
+body #projects .card-style-container .description-style .btn-container .btn-gitHub .icon-gitHub {
   margin-right: 0.5rem;
   width: 1.5rem;
   height: 1.5rem;
   color: #000000;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-gitHub .icon-gitHub svg {
+body #projects .card-style-container .description-style .btn-container .btn-gitHub .icon-gitHub svg {
   width: 100%;
   height: 100%;
 }
-body #projects .card-style-container .div-style-description .btn-container .btn-gitHub span {
+body #projects .card-style-container .description-style .btn-container .btn-gitHub span {
   color: #000000;
+}
+body #projects .card-style-container .description-style .tools-styles ul {
+  list-style: none;
+  display: flex;
+}
+body #projects .card-style-container .description-style .tools-styles ul li {
+  margin: 0 0.5rem;
+}
+body #projects .card-style-container .description-style .tools-styles ul li img {
+  height: 2rem;
+  width: 3rem;
 }
 body #contact {
   display: flex;

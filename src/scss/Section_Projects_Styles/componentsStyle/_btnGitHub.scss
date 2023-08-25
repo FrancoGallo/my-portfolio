@@ -1,23 +1,23 @@
-.btn-linkProject {
+.btn-gitHub {
     display: flex;
-    width: 11rem;
+    width: 10.5rem;
     padding: 0.4rem;
-    border-color: #7b71ff;
+    border-radius: 12px;
+    border-color: #000000;
     border-style: solid;
     align-items: center;
     cursor: pointer;
     border-radius: 12px;
-    background-color: #1c1c1c;
+    background-color: #ffffff;
     box-shadow:  
     10px 10px 10px #0c0c0c;
     text-decoration: none;
-    margin-right: 2rem;
 
     &:hover {
-        background-color: #7b71ff;
+        background-color: #000000;
         transition: all 200ms ease;
 
-        .icon-link {
+        .icon-gitHub {
             color: #ffffff;
         }
 
@@ -26,11 +26,16 @@
         }
     }
 
-    .icon-link {
+    &:active {
+        scale: (0.9);
+        transition: all 100ms ease;
+    }
+
+    .icon-gitHub {
         margin-right: 0.5rem;
         width: 1.5rem;
         height: 1.5rem;
-        color: #7b71ff;
+        color: #000000;
 
         svg {
             width: 100%;
@@ -39,7 +44,6 @@
     }
 
     span {
-        color: #7b71ff;
-        text-decoration: none;
+        color: #000000;
     }
 }

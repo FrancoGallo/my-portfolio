@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-import { getFirestoreApp } from '../db/dbFirebase';
+import { getFirestoreApp } from '../../db/dbFirebase';
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 
 getFirestoreApp() // By hosting it here the database can only be loaded in the 'Card.jsx' section
@@ -35,11 +35,11 @@ const Card = () => {
     <>
       {data.map((data) => (
           <section className='card-style-container' key={data.id}>
-            <div className='div-style-image'>
+            <div className='image-style'>
               <img src={data.img} alt={data.titleProject} />
             </div>
         
-            <div className='div-style-description'>
+            <div className='description-style'>
               <div className='btn-container'>
                 <a href={data.appUrl} className='btn-linkProject' target="_blank">
                   <div className='icon-link'>
@@ -69,15 +69,18 @@ const Card = () => {
                   <br/>
                   {data.description}
                 </p>
+              </div>
 
-                <p>
-                  Tools:
-                  <img src={data.img} alt="Language" />
-                  <img src={data.img} alt="No Framework" />
-                  <img src={data.img} alt="No database" />
-                  <img src={data.img} alt="Style" />
-                  <img src={data.img} alt="Style" />
-                </p>
+              <div className='tools-styles'>
+                <h3>Herramientas:</h3>
+
+                <ul>
+                  <li><img src={data.img} alt="" /></li>
+                  <li><img src={data.img} alt="" /></li>
+                  <li><img src={data.img} alt="" /></li>
+                  <li><img src={data.img} alt="" /></li>
+                  <li><img src={data.img} alt="" /></li>
+                </ul>
               </div>              
             </div>
           </section>
