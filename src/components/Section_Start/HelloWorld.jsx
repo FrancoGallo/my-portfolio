@@ -21,7 +21,7 @@ const HelloWorld = () => {
 
   return (
     <div className='helloWorld-style'>
-      <h2>¡Hola mundo!</h2>
+      <h1>¡Hola mundo!</h1>
       
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed labore ducimus quasi dolores. Voluptatibus, obcaecati rerum! Vitae, ducimus quis placeat deserunt sequi illum a dolorum est impedit, mollitia modi?

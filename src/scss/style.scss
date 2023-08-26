@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&family=Poppins:ital,wght@0,400;1,800&display=swap');
+
+// Typography:
+//    font-family: 'ADLaM Display', cursive; [font-weight: 400] (buttons)
+//    font-family: 'Lilita One', cursive; [font-weight: 400] (titles)
+//    font-family: 'Poppins', sans-serif; [font-weight: 400] (paragraphs) / [font-weight: 800] (subtitles)
+
+// Sintaxis:
+//      font: (font-weight)  (font-size)/(line-height)  (font-family)
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +21,26 @@
 body {
   background-color: #1e1e1e;
   color: #ffffff;
+
+  h1 {
+    font: 400 3.5rem 'Lilita One', cursive;
+  }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
+  p, li {
+    font: 400 1rem/1.5 'Poppins', sans-serif;
+  }
 
   @import 'Section_Header_Styles/header';
   

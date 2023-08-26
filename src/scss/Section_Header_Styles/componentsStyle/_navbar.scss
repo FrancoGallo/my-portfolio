@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: space-between;
     border-radius: 12px;
-    background: linear-gradient(to right, #30608d, #3d4561);
+    background: linear-gradient(to right, #2d618e, #3a3144);
     box-shadow:  
     10px 10px 10px #0c0c0c;
     width: 80%;
@@ -14,8 +14,8 @@ nav {
     .icon-code {
         
         svg {
-            height: 2rem;
-            width: 2rem;
+            height: 2.5rem;
+            width: 2.5rem;
             color: #ffffff;
         }
     }
@@ -29,6 +29,7 @@ nav {
             
             span {
                 cursor: pointer;
+                font: 400 1.3rem 'ADLaM Display', cursive;
 
                 &:hover {
                     color: #0b23fc;

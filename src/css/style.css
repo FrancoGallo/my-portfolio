@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&family=Poppins:ital,wght@0,400;1,800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,22 @@ body {
   background-color: #1e1e1e;
   color: #ffffff;
 }
+body h1 {
+  font: 400 3.5rem "Lilita One", cursive;
+}
+body h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+body h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+body p, body li {
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
 body header {
   display: flex;
   justify-content: center;
@@ -20,7 +37,7 @@ body header nav {
   display: flex;
   justify-content: space-between;
   border-radius: 12px;
-  background: linear-gradient(to right, #30608d, #3d4561);
+  background: linear-gradient(to right, #2d618e, #3a3144);
   box-shadow: 10px 10px 10px #0c0c0c;
   width: 80%;
   padding: 0.8rem;
@@ -28,8 +45,8 @@ body header nav {
   margin-top: 1rem;
 }
 body header nav .icon-code svg {
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
   color: #ffffff;
 }
 body header nav ul {
@@ -41,6 +58,7 @@ body header nav ul li {
 }
 body header nav ul li span {
   cursor: pointer;
+  font: 400 1.3rem "ADLaM Display", cursive;
 }
 body header nav ul li span:hover {
   color: #0b23fc;
@@ -58,7 +76,7 @@ body #start .helloWorld-style-container {
 body #start .helloWorld-style-container .helloWorld-style {
   margin: 1rem;
 }
-body #start .helloWorld-style-container .helloWorld-style h2 {
+body #start .helloWorld-style-container .helloWorld-style h1 {
   margin-bottom: 1rem;
 }
 body #start .helloWorld-style-container .helloWorld-style p {
@@ -141,7 +159,7 @@ body #start .skills-style-container {
   margin: 1rem;
   width: 80%;
 }
-body #start .skills-style-container h4 {
+body #start .skills-style-container h3 {
   margin: 0;
 }
 body #projects {
@@ -179,7 +197,7 @@ body #projects .card-style-container .description-style .btn-container {
 }
 body #projects .card-style-container .description-style .btn-container .btn-linkProject {
   display: flex;
-  width: 11rem;
+  width: 12rem;
   padding: 0.4rem;
   border-color: #7b71ff;
   border-style: solid;
@@ -190,6 +208,8 @@ body #projects .card-style-container .description-style .btn-container .btn-link
   box-shadow: 10px 10px 10px #0c0c0c;
   text-decoration: none;
   margin-right: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 body #projects .card-style-container .description-style .btn-container .btn-linkProject:hover {
   background-color: #7b71ff;
@@ -218,10 +238,11 @@ body #projects .card-style-container .description-style .btn-container .btn-link
 body #projects .card-style-container .description-style .btn-container .btn-linkProject span {
   color: #7b71ff;
   text-decoration: none;
+  font-family: "ADLaM Display", cursive;
 }
 body #projects .card-style-container .description-style .btn-container .btn-gitHub {
   display: flex;
-  width: 10.5rem;
+  width: 11.5rem;
   padding: 0.4rem;
   border-radius: 12px;
   border-color: #000000;
@@ -259,6 +280,7 @@ body #projects .card-style-container .description-style .btn-container .btn-gitH
 }
 body #projects .card-style-container .description-style .btn-container .btn-gitHub span {
   color: #000000;
+  font-family: "ADLaM Display", cursive;
 }
 body #projects .card-style-container .description-style .tools-styles ul {
   list-style: none;

@@ -1,6 +1,6 @@
 .btn-linkProject {
     display: flex;
-    width: 11rem;
+    width: 12rem;
     padding: 0.4rem;
     border-color: #7b71ff;
     border-style: solid;
@@ -12,6 +12,8 @@
     10px 10px 10px #0c0c0c;
     text-decoration: none;
     margin-right: 2rem;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
         background-color: #7b71ff;
@@ -46,5 +48,6 @@
     span {
         color: #7b71ff;
         text-decoration: none;
+        font-family: 'ADLaM Display', cursive;
     }
 }
