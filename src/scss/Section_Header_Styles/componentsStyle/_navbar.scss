@@ -32,7 +32,14 @@ nav {
                 font: 400 1.3rem 'ADLaM Display', cursive;
 
                 &:hover {
-                    color: #0b23fc;
+                    text-shadow: 
+                        0 0 5px #0088ff,
+                        0 0 10px #0088ff,
+                        0 0 15px #0088ff,
+                        0 0 20px #0088ff,
+                        0 0 25px #0088ff,
+                        0 0 30px #0088ff,
+                        0 0 35px #0088ff;
                 }
             }
         }

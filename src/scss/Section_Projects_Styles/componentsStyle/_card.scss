@@ -5,10 +5,10 @@
     box-shadow:  
     10px 10px 10px #0c0c0c;
     width: 80%;
-    margin: 1rem 0 1rem 0;
+    margin: 2rem 0 2rem 0;
 
     .image-style {
-        margin: 1.5%;
+        padding: 1rem;
         
        img {
             height: 100%;
@@ -20,7 +20,7 @@
     .description-style {
         display: flex;
         flex-direction: column;
-        margin: 1.5%;
+        padding: 1rem;
         justify-content: space-between;
 
         .btn-container {
@@ -28,19 +28,57 @@
             display: flex;
             justify-content: flex-end;
 
+                .prueba {
+                    padding: 1rem;
+                    cursor: pointer;
+                    border-radius: 12px;
+                    border-color: #009292;
+                    border-style: solid;
+                    color: #009292;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 2rem;
+                    border-radius: 12px;
+                    box-shadow:  
+                    10px 10px 10px #0c0c0c;
+                    height: auto;
+                    width: auto;
+
+                    &:active {
+                        box-shadow:  
+                        inset 5px 5px 5px #0c0c0c,
+                        inset 5px 5px 10px #0c0c0c,
+                        inset 5px 5px 15px #0c0c0c;
+                    }
+
+                    &:hover {
+                        background-color: #009292;
+                        color: white;
+                    }
+                }
+            }
+
             @import 'btnLinkProject';
 
             @import 'btnGitHub';
         }
 
+        .text-style {
+            margin: 2.5rem 0 2rem 0;
+        }
+
         .tools-styles {
+
+            h3 {
+                margin-bottom: 0.5rem;
+            }
 
             ul {
                 list-style: none;
                 display: flex;
 
                 li {
-                    margin: 0 0.5rem;
+                    margin-right: 1rem;
 
                     img {
                         height: 2rem;
@@ -50,4 +88,3 @@
             }
         }
     }
-}

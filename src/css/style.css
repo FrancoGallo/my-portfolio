@@ -61,7 +61,7 @@ body header nav ul li span {
   font: 400 1.3rem "ADLaM Display", cursive;
 }
 body header nav ul li span:hover {
-  color: #0b23fc;
+  text-shadow: 0 0 5px #0088ff, 0 0 10px #0088ff, 0 0 15px #0088ff, 0 0 20px #0088ff, 0 0 25px #0088ff, 0 0 30px #0088ff, 0 0 35px #0088ff;
 }
 body #start {
   display: flex;
@@ -174,10 +174,10 @@ body #projects .card-style-container {
   background-color: #1c1c1c;
   box-shadow: 10px 10px 10px #0c0c0c;
   width: 80%;
-  margin: 1rem 0 1rem 0;
+  margin: 2rem 0 2rem 0;
 }
 body #projects .card-style-container .image-style {
-  margin: 1.5%;
+  padding: 1rem;
 }
 body #projects .card-style-container .image-style img {
   height: 100%;
@@ -187,7 +187,7 @@ body #projects .card-style-container .image-style img {
 body #projects .card-style-container .description-style {
   display: flex;
   flex-direction: column;
-  margin: 1.5%;
+  padding: 1rem;
   justify-content: space-between;
 }
 body #projects .card-style-container .description-style .btn-container {
@@ -195,11 +195,32 @@ body #projects .card-style-container .description-style .btn-container {
   display: flex;
   justify-content: flex-end;
 }
-body #projects .card-style-container .description-style .btn-container .btn-linkProject {
+body #projects .card-style-container .description-style .btn-container .prueba {
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 12px;
+  border-color: #009292;
+  border-style: solid;
+  color: #009292;
   display: flex;
-  width: 12rem;
+  align-items: center;
+  margin-right: 2rem;
+  border-radius: 12px;
+  box-shadow: 10px 10px 10px #0c0c0c;
+  height: auto;
+  width: auto;
+}
+body #projects .card-style-container .description-style .btn-container .prueba:active {
+  box-shadow: inset 5px 5px 5px #0c0c0c, inset 5px 5px 10px #0c0c0c, inset 5px 5px 15px #0c0c0c;
+}
+body #projects .card-style-container .description-style .btn-container .prueba:hover {
+  background-color: #009292;
+  color: white;
+}
+body #projects .card-style-container .description-style .btn-linkProject {
+  display: flex;
   padding: 0.4rem;
-  border-color: #7b71ff;
+  border-color: #2d618e;
   border-style: solid;
   align-items: center;
   cursor: pointer;
@@ -211,85 +232,89 @@ body #projects .card-style-container .description-style .btn-container .btn-link
   justify-content: center;
   align-items: center;
 }
-body #projects .card-style-container .description-style .btn-container .btn-linkProject:hover {
-  background-color: #7b71ff;
+body #projects .card-style-container .description-style .btn-linkProject:hover {
+  background-color: #2d618e;
   transition: all 200ms ease;
 }
-body #projects .card-style-container .description-style .btn-container .btn-linkProject:hover .icon-link {
+body #projects .card-style-container .description-style .btn-linkProject:hover .icon-link {
   color: #ffffff;
 }
-body #projects .card-style-container .description-style .btn-container .btn-linkProject:hover span {
+body #projects .card-style-container .description-style .btn-linkProject:hover span {
   color: #ffffff;
 }
-body #projects .card-style-container .description-style .btn-container .btn-linkProject:active {
+body #projects .card-style-container .description-style .btn-linkProject:active {
   scale: 0.9;
   transition: all 100ms ease;
 }
-body #projects .card-style-container .description-style .btn-container .btn-linkProject .icon-link {
+body #projects .card-style-container .description-style .btn-linkProject .icon-link {
   margin-right: 0.5rem;
   width: 1.5rem;
   height: 1.5rem;
-  color: #7b71ff;
+  color: #2d618e;
 }
-body #projects .card-style-container .description-style .btn-container .btn-linkProject .icon-link svg {
+body #projects .card-style-container .description-style .btn-linkProject .icon-link svg {
   width: 100%;
   height: 100%;
 }
-body #projects .card-style-container .description-style .btn-container .btn-linkProject span {
-  color: #7b71ff;
+body #projects .card-style-container .description-style .btn-linkProject span {
+  color: #2d618e;
   text-decoration: none;
   font-family: "ADLaM Display", cursive;
 }
-body #projects .card-style-container .description-style .btn-container .btn-gitHub {
+body #projects .card-style-container .description-style .btn-gitHub {
   display: flex;
-  width: 11.5rem;
   padding: 0.4rem;
   border-radius: 12px;
-  border-color: #000000;
+  border-color: #111111;
   border-style: solid;
   align-items: center;
   cursor: pointer;
   border-radius: 12px;
-  background-color: #ffffff;
   box-shadow: 10px 10px 10px #0c0c0c;
   text-decoration: none;
 }
-body #projects .card-style-container .description-style .btn-container .btn-gitHub:hover {
-  background-color: #000000;
+body #projects .card-style-container .description-style .btn-gitHub:hover {
+  background-color: #111111;
   transition: all 200ms ease;
 }
-body #projects .card-style-container .description-style .btn-container .btn-gitHub:hover .icon-gitHub {
+body #projects .card-style-container .description-style .btn-gitHub:hover .icon-gitHub {
   color: #ffffff;
 }
-body #projects .card-style-container .description-style .btn-container .btn-gitHub:hover span {
+body #projects .card-style-container .description-style .btn-gitHub:hover span {
   color: #ffffff;
 }
-body #projects .card-style-container .description-style .btn-container .btn-gitHub:active {
+body #projects .card-style-container .description-style .btn-gitHub:active {
   scale: 0.9;
   transition: all 100ms ease;
 }
-body #projects .card-style-container .description-style .btn-container .btn-gitHub .icon-gitHub {
+body #projects .card-style-container .description-style .btn-gitHub .icon-gitHub {
   margin-right: 0.5rem;
   width: 1.5rem;
   height: 1.5rem;
-  color: #000000;
+  color: #959595;
 }
-body #projects .card-style-container .description-style .btn-container .btn-gitHub .icon-gitHub svg {
+body #projects .card-style-container .description-style .btn-gitHub .icon-gitHub svg {
   width: 100%;
   height: 100%;
 }
-body #projects .card-style-container .description-style .btn-container .btn-gitHub span {
-  color: #000000;
+body #projects .card-style-container .description-style .btn-gitHub span {
+  color: #959595;
   font-family: "ADLaM Display", cursive;
 }
-body #projects .card-style-container .description-style .tools-styles ul {
+body #projects .card-style-container .text-style {
+  margin: 2.5rem 0 2rem 0;
+}
+body #projects .card-style-container .tools-styles h3 {
+  margin-bottom: 0.5rem;
+}
+body #projects .card-style-container .tools-styles ul {
   list-style: none;
   display: flex;
 }
-body #projects .card-style-container .description-style .tools-styles ul li {
-  margin: 0 0.5rem;
+body #projects .card-style-container .tools-styles ul li {
+  margin-right: 1rem;
 }
-body #projects .card-style-container .description-style .tools-styles ul li img {
+body #projects .card-style-container .tools-styles ul li img {
   height: 2rem;
   width: 3rem;
 }
@@ -369,37 +394,55 @@ body #contact section div {
   justify-content: space-between;
   flex-direction: column;
 }
+body #contact section div ul li {
+  list-style: none;
+}
 body #contact section div .location-style {
-  border-radius: 12px;
-  background-color: #1c1c1c;
-  box-shadow: 10px 10px 10px #0c0c0c;
   padding: 0.5rem;
+}
+body #contact section div .location-style h3 {
+  margin-bottom: 0.5rem;
 }
 body #contact section div .location-style iframe {
   height: 15rem;
   width: 25rem;
   border-radius: 12px;
+  box-shadow: 10px 10px 10px #0c0c0c;
 }
 body footer {
   display: flex;
   justify-content: space-around;
-  background-color: #686868;
+  align-items: center;
+  background: linear-gradient(to right, #2d618e, #3a3144);
   padding: 15px 0 15px 0;
 }
-body footer img {
-  height: 50px;
-  width: 50px;
+body footer .icon-code svg {
+  height: 5rem;
+  width: 5rem;
 }
 body footer section {
   display: grid;
   grid-template-columns: auto auto;
 }
-body footer section a, body footer section span {
-  padding: 5px;
+body footer section .socialNetwork-container {
+  display: flex;
+  padding: 0.5rem;
 }
-body footer section img {
-  height: 25px;
-  width: 25px;
+body footer section .socialNetwork-container a, body footer section .socialNetwork-container .a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  width: auto;
+}
+body footer section .socialNetwork-container a svg, body footer section .socialNetwork-container .a svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+body footer section .socialNetwork-container a span, body footer section .socialNetwork-container .a span {
+  font: 0.8rem "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

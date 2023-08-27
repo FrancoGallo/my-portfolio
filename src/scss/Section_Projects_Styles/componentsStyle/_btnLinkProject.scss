@@ -1,8 +1,7 @@
 .btn-linkProject {
     display: flex;
-    width: 12rem;
     padding: 0.4rem;
-    border-color: #7b71ff;
+    border-color: #2d618e;
     border-style: solid;
     align-items: center;
     cursor: pointer;
@@ -16,7 +15,7 @@
     align-items: center;
 
     &:hover {
-        background-color: #7b71ff;
+        background-color: #2d618e;
         transition: all 200ms ease;
 
         .icon-link {
@@ -37,7 +36,7 @@
         margin-right: 0.5rem;
         width: 1.5rem;
         height: 1.5rem;
-        color: #7b71ff;
+        color: #2d618e;
 
         svg {
             width: 100%;
@@ -46,7 +45,7 @@
     }
 
     span {
-        color: #7b71ff;
+        color: #2d618e;
         text-decoration: none;
         font-family: 'ADLaM Display', cursive;
     }

@@ -1,25 +1,44 @@
 footer {
     display: flex;
     justify-content: space-around;
-    background-color: #686868;
+    align-items: center;
+    background: linear-gradient(to right, #2d618e, #3a3144);
     padding: 15px 0 15px 0;
   
-    img {
-      height: 50px;
-      width: 50px;
+    .icon-code {
+
+      svg {
+        height: 5rem;
+        width: 5rem;
+      }
     }
   
     section{
       display: grid;
       grid-template-columns: auto auto;
+
+      .socialNetwork-container {
+        display: flex;
+        padding: 0.5rem;
+
+        a, .a {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #ffffff;
+          text-decoration: none;
+          width: auto;
   
-      a,span {
-        padding: 5px;
-      }
-  
-      img{
-        height: 25px;
-        width: 25px;
+          svg {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-right: 0.5rem;
+          }
+
+          span {
+            font: 0.8rem 'Poppins', sans-serif;;
+          }
+        }
       }
     }
   }
