@@ -6,6 +6,12 @@
     width: 30rem;
     padding: 0;
 
+    img {
+        position: absolute;
+        width: inherit;
+        z-index: 1;
+    }
+
     form {
         display: flex;
         flex-direction: column;

@@ -1,6 +1,77 @@
 ul {
 
     li {
-        list-style: none;;
+        list-style: none;
+
+        a {
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            margin-bottom: 1rem;
+
+            svg {
+                height: 1.5rem;
+                width: 1.5rem;
+                margin-right: 0.8rem;
+            }
+
+            .icon-whatsapp {
+                color: #25D366;
+            }
+
+            .icon-email {
+                color: #E84F4B;
+            }
+
+            .icon-linkedin {
+                color: #0A66C2;
+            }
+
+            .icon-instagram {
+                color: #d87093;
+            }
+
+            .text-whatsapp:hover {
+                transition: 100ms;
+                text-shadow: 
+                    0 0 5px #25D366, 
+                    0 0 10px #25D366, 
+                    0 0 15px #25D366;
+            }
+
+            .text-email:hover {
+                transition: 100ms;
+                text-shadow: 
+                    0 0 5px #E84F4B, 
+                    0 0 10px #E84F4B, 
+                    0 0 15px #E84F4B;
+            }
+
+            .text-linkedin:hover {
+                transition: 100ms;
+                text-shadow: 
+                    0 0 5px #0A66C2, 
+                    0 0 10px #0A66C2, 
+                    0 0 15px #0A66C2;
+            }
+
+            .text-instagram:hover {
+                transition: 100ms;
+                text-shadow: 
+                    0 0 5px #d87093, 
+                    0 0 10px #d87093, 
+                    0 0 15px #d87093;
+            }
+
+            .text-github:hover {
+                transition: 100ms;
+                text-shadow: 
+                    0 0 5px #000000, 
+                    0 0 10px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 20px #ffffff;
+            }
+        }
     }
 }
