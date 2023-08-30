@@ -28,50 +28,11 @@
             display: flex;
             justify-content: flex-end;
 
-                .prueba {
-                    padding: 1rem;
-                    cursor: pointer;
-                    border-radius: 12px;
-                    border-color: #009292;
-                    border-style: solid;
-                    color: #009292;
-                    display: flex;
-                    align-items: center;
-                    margin-right: 2rem;
-                    border-radius: 12px;
-                    box-shadow:  
-                    10px 10px 10px #0c0c0c;
-                    height: auto;
-                    width: auto;
-
-                    &:active {
-                        scale: (0.9);
-                        transition: 100ms;
-                    }
-
-                    &:hover {
-                        border-color: #ffffff;
-                        box-shadow:  
-                        0px 0px 5px #009292,
-                        0px 0px 10px #009292,
-                        0px 0px 15px #009292;
-
-                        span {
-                            color: #ffffff;
-                            text-shadow: 
-                                0 0 5px #009292,
-                                0 0 10px #009292,
-                                0 0 15px #009292,
-                                0 0 20px #009292;
-                        }
-                    }
-                }
-            }
-
             @import 'btnLinkProject';
 
             @import 'btnGitHub';
         }
+    }
 
         .text-style {
             margin: 2.5rem 0 2rem 0;

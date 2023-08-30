@@ -13,30 +13,7 @@
         width: 95%;
       }
 
-      .imgCertificate-container {
-        display: flex;
-        
-        .imgCertificate {
-
-          .img-style {
-            height: 5rem;
-            width: 6rem;
-            margin: 0.5rem 0.5rem 0 0;
-            cursor: pointer;
-            border-radius: 12px;
-
-            &:hover {
-              scale: (1.2);
-              transition: all 400ms ease;
-            }
-
-            &:active {
-              scale: (1.1);
-              transition: all 100ms ease;
-            }
-          }
-        }
-      }
+      @import 'btnModal';
 
       @import "modal";
     }

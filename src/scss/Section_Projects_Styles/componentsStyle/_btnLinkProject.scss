@@ -1,6 +1,6 @@
 .btn-linkProject {
     display: flex;
-    padding: 0.4rem;
+    padding: 0.5rem;
     border-color: #2d618e;
     border-style: solid;
     align-items: center;
@@ -15,8 +15,13 @@
     align-items: center;
 
     &:hover {
-        background-color: #2d618e;
-        transition: all 200ms ease;
+        transition: 200ms;
+        border-color: #ffffff;
+        box-shadow:  
+            0 0 5px #0088ff,
+            0 0 10px #0088ff,
+            0 0 15px #0088ff,
+            0 0 20px #0088ff;
 
         .icon-link {
             color: #ffffff;
@@ -24,6 +29,12 @@
 
         span {
             color: #ffffff;
+            text-shadow: 
+                0 0 5px #0088ff,
+                0 0 10px #0088ff,
+                0 0 15px #0088ff,
+                0 0 20px #0088ff,
+                0 0 25px #0088ff;
         }
     }
 

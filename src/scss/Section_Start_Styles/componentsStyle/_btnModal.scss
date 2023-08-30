@@ -1,0 +1,49 @@
+.btn-modal-container {
+    display: inline-block;
+
+    .btn-modal {
+      padding: 0.6rem;
+      border-style: solid;
+      border-color: #2d618e;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow:  
+      10px 10px 10px #0c0c0c;
+      margin-top: 1rem;
+
+      &:hover {
+        transition: 200ms;
+        background-color: #2d618e;
+
+        svg {
+            color: #ffffff;
+        }
+
+        span {
+            color: #ffffff;
+        }
+      }
+
+      &:active {
+        transition: 100ms;
+        box-shadow:  
+        inset 5px 5px 10px #0c0c0c;
+      }
+
+      svg {
+        margin-right: 0.5rem;
+        height: 1.3rem;
+        width: 1.3rem;
+        color: #2d618e;
+      }
+
+      span {
+        font-family: 'ADLaM Display', cursive;
+        font-size: 1.1rem;
+        color: #2d618e;
+      }
+    }
+}

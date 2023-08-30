@@ -41,11 +41,6 @@ const Card = () => {
         
             <div className='description-style'>
               <div className='btn-container'>
-
-                  <div className='prueba'>
-                    <span>BTN PRUEBA</span>
-                  </div>
-
                 <a href={data.appUrl} className='btn-linkProject' target="_blank" rel="noopener">
                   <div className='icon-link'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
