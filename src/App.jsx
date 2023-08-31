@@ -21,7 +21,7 @@ function App() {
           <img className="profilePhoto-style" src="images/fotoPrueba.jpg" alt="My face" />
         </section>
 
-        <Skills/>
+        {/* <Skills/> */}
       </article>
 
       <article id="projects">

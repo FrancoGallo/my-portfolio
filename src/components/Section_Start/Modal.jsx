@@ -2,7 +2,7 @@ import React from 'react'
 
 const Modal = ( {closeModal} ) => {
   return (
-    <div className='modal-style-container'>
+    <div className='modal-style-container' onClick={closeModal}>
       <div className='modal-style'>
         <img src='images/frontend react.png' alt='Certificate FrontEnd React' />
 
