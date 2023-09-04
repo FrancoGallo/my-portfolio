@@ -5,10 +5,10 @@ import Card from "./components/Section_Projects/Card";
 import HelloWorld from "./components/Section_Start/HelloWorld";
 import NavBar from "./components/Section_Header/NavBar";
 import Location from "./components/Section_Contact/Location";
-
 // import Skills from "./components/Section_Start/Skills";
 
 function App() {
+  
   return (
     <>
      <header>
@@ -27,7 +27,7 @@ function App() {
 
       <article id="projects">
         <h2>Proyectos</h2>
-
+        
         <Card/>
       </article>
 

@@ -15,16 +15,7 @@
 
       @import 'btnModal';
 
-      @import "modal";
-
-      .slider-container {
-        width: 500px;
-
-        img {
-          width: 100%;
-          border-radius: 12px;
-        }
-      }
+      @import "customModal";
     }
 
     .profilePhoto-style {

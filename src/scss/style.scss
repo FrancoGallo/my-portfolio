@@ -44,6 +44,15 @@ body {
     font: 400 1rem/1.5 'Poppins', sans-serif;
   }
 
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .modal {
+    --bs-modal-padding: 0;
+  }
+
   @import 'Section_Header_Styles/header';
   
   @import 'Section_Start_Styles/start';
