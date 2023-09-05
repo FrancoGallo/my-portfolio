@@ -13038,9 +13038,11 @@ body h3, body .h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
+  margin: 0;
 }
 body p, body li {
   font: 400 1rem/1.5 "Poppins", sans-serif;
+  margin: 0;
 }
 body ul {
   margin: 0;
@@ -13192,16 +13194,69 @@ body #start .helloWorld-style-container .profilePhoto-style {
   background-color: #1c1c1c;
   box-shadow: 15px 15px 10px #0c0c0c;
 }
-body #start .skills-style-container {
+body #start .skills-container {
   border-radius: 12px;
   background-color: #1c1c1c;
   box-shadow: 10px 10px 10px #0c0c0c;
-  padding: 1rem;
-  margin: 1rem;
   width: 80%;
+  margin-top: 1.5rem;
 }
-body #start .skills-style-container h3, body #start .skills-style-container .h3 {
-  margin: 0;
+body #start .skills-container .skills-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: pointer;
+}
+body #start .skills-container .skills-btn:hover {
+  background-color: #222222;
+  border-radius: 12px;
+}
+body #start .skills-container .skills-btn svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+body #start .skills-container .skills-btn .svg-rotate {
+  transform: rotate(180deg);
+}
+body #start .skills-container .skills-content-none {
+  display: none;
+}
+body #start .skills-container .skills-content {
+  padding: 1rem;
+}
+body #start .skills-container .skills-content .skills {
+  display: flex;
+}
+body #start .skills-container .skills-content .skills img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+body #start .skills-container .skills-content .skills .skills-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 0.5rem;
+}
+body #start .skills-container .skills-content .skills .skills-description .loading-bar {
+  border-style: solid;
+  border-color: #0c0c0c;
+  border-radius: 12px;
+  height: 1rem;
+  width: 9rem;
+}
+body #start .skills-container .skills-content .skills .skills-description .loading-bar .loading {
+  height: 100%;
+  background-color: red;
+  border-radius: 12px;
+}
+body #start .skills-container .skills-content .skills .skills-description .skill-name {
+  display: flex;
+  justify-content: space-between;
+}
+body #start .skills-container .skills-content .skills .skills-description .skill-name span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
 }
 body #projects {
   display: flex;

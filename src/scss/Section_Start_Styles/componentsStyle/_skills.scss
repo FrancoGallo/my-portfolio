@@ -1,13 +1,36 @@
-.skills-style-container {
+.skills-container {
     border-radius: 12px;
     background-color: #1c1c1c;
     box-shadow:  
     10px 10px 10px #0c0c0c;
-    padding: 1rem;
-    margin: 1rem;
     width: 80%;
+    margin-top: 1.5rem;
 
-    h3 {
-        margin: 0;
+    .skills-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #222222;
+            border-radius: 12px;
+        }
+
+        svg {
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+
+        .svg-rotate {
+            transform: rotate(180deg);
+        }
     }
+
+    .skills-content-none {
+        display: none;
+    }
+
+    @import 'skills-content';
 }

@@ -5,7 +5,7 @@ import Card from "./components/Section_Projects/Card";
 import HelloWorld from "./components/Section_Start/HelloWorld";
 import NavBar from "./components/Section_Header/NavBar";
 import Location from "./components/Section_Contact/Location";
-// import Skills from "./components/Section_Start/Skills";
+import Skills from "./components/Section_Start/Skills";
 
 function App() {
   
@@ -22,7 +22,7 @@ function App() {
           <img className="profilePhoto-style" src="images/fotoPrueba.jpg" alt="My face" />
         </section>
 
-        {/* <Skills/> */}
+        <Skills/>
       </article>
 
       <article id="projects">
