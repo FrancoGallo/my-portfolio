@@ -13215,18 +13215,30 @@ body #start .skills-container .skills-btn:hover {
 body #start .skills-container .skills-btn svg {
   height: 1.5rem;
   width: 1.5rem;
+  transition: 0.5s;
 }
-body #start .skills-container .skills-btn .svg-rotate {
+body #start .skills-container .skills-btn .svg {
   transform: rotate(180deg);
+}
+body #start .skills-container .skills-btn .left-arrow {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+body #start .skills-container .skills-btn .right-arrow {
+  transform: rotate(0);
 }
 body #start .skills-container .skills-content-none {
   display: none;
 }
 body #start .skills-container .skills-content {
   padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 body #start .skills-container .skills-content .skills {
   display: flex;
+  margin: 0.5rem;
 }
 body #start .skills-container .skills-content .skills img {
   width: 3.5rem;
@@ -13241,14 +13253,14 @@ body #start .skills-container .skills-content .skills .skills-description {
 body #start .skills-container .skills-content .skills .skills-description .loading-bar {
   border-style: solid;
   border-color: #0c0c0c;
-  border-radius: 12px;
+  border-radius: 5px;
   height: 1rem;
   width: 9rem;
 }
 body #start .skills-container .skills-content .skills .skills-description .loading-bar .loading {
   height: 100%;
-  background-color: red;
-  border-radius: 12px;
+  background-color: #2d618e;
+  border-radius: 3px;
 }
 body #start .skills-container .skills-content .skills .skills-description .skill-name {
   display: flex;

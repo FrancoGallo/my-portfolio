@@ -21,10 +21,20 @@
         svg {
             height: 1.5rem;
             width: 1.5rem;
+            transition: 0.5s;
         }
 
-        .svg-rotate {
+        .svg {
             transform: rotate(180deg);
+        }
+
+        .left-arrow {
+            transform: rotate(180deg);
+            transition: 0.5s;
+        }
+
+        .right-arrow {
+            transform: rotate(0);
         }
     }
 
