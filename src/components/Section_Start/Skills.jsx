@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import SkillsContent from './SkillsContent';
+import { AnimatePresence } from 'framer-motion';
 
 const Skills = () => {
   const [content, setContent] = useState(false)
@@ -19,7 +20,7 @@ const Skills = () => {
         </svg>
       </div>
 
-      <SkillsContent content={content} />
+      {content && <SkillsContent />}
     </section>
   )
 }

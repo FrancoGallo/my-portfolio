@@ -1,6 +1,7 @@
 import React from 'react'
+import { motion } from "framer-motion"
 
-const SkillsContent = ( { content } ) => {
+const SkillsContent = () => {
 
   const skills = [
     {name: 'HTML', img: 'images/iconHTML.svg', porcentaje: '80%', width: {width:'80%'}},
@@ -13,7 +14,10 @@ const SkillsContent = ( { content } ) => {
   ]
 
   return (
-    <div className={content ? 'skills-content' : 'skills-content-none'}>
+    <motion.div className='skills-content'
+      initial={{ y: -30 }}
+      animate={{ y: 0 }}
+    >
     {skills.map((skill) => {
         return (
             <div className='skills' key={skill.name}>
@@ -33,7 +37,7 @@ const SkillsContent = ( { content } ) => {
             </div>
         )
     })}
-    </div>
+    </motion.div>
   )
 }
 

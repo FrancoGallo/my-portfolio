@@ -13227,9 +13227,6 @@ body #start .skills-container .skills-btn .left-arrow {
 body #start .skills-container .skills-btn .right-arrow {
   transform: rotate(0);
 }
-body #start .skills-container .skills-content-none {
-  display: none;
-}
 body #start .skills-container .skills-content {
   padding: 1rem;
   display: flex;
