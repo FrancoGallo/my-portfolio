@@ -1,26 +1,19 @@
 import React from 'react'
+import skills from './SkillsArray'
 import { motion } from "framer-motion"
 
 const SkillsContent = () => {
 
-  const skills = [
-    {name: 'HTML', img: 'images/iconHTML.svg', porcentaje: '80%', width: {width:'80%'}},
-    {name: 'CSS', img: 'images/iconCSS.svg', porcentaje: '30%', width: {width:'30%'}},
-    {name: 'SASS', img: 'images/iconSASS.svg', porcentaje: '30%', width: {width:'30%'}},
-    {name: 'Bootstrap', img: 'images/iconBootstrap.svg', porcentaje: '30%', width: {width:'30%'}},
-    {name: 'JavaScript', img: 'images/iconJavaScript.svg', porcentaje: '30%', width: {width:'30%'}},
-    {name: 'React', img: 'images/iconReact.svg', porcentaje: '30%', width: {width:'30%'}},
-    {name: 'Firebase', img: 'images/iconFirebase.svg', porcentaje: '30%', width: {width:'30%'}}
-  ]
-
   return (
-    <motion.div className='skills-content'
-      initial={{ y: -30 }}
-      animate={{ y: 0 }}
-    >
+  <div className='skills-content'>
     {skills.map((skill) => {
         return (
-            <div className='skills' key={skill.name}>
+            <motion.div className='skills' key={skill.name}
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 56 }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.3 }}
+            >
                 <img src={skill.img} alt={skill.name} />
     
                 <div className='skills-description'>
@@ -34,10 +27,10 @@ const SkillsContent = () => {
                         <span className='percentage'>{skill.porcentaje}</span>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         )
     })}
-    </motion.div>
+  </div>
   )
 }
 

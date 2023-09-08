@@ -6,23 +6,24 @@ import HelloWorld from "./components/Section_Start/HelloWorld";
 import NavBar from "./components/Section_Header/NavBar";
 import Location from "./components/Section_Contact/Location";
 import Skills from "./components/Section_Start/Skills";
+// import { AnimatePresence } from "framer-motion";
 
 function App() {
   
   return (
     <>
      <header>
-        <NavBar/>
+        <NavBar />
       </header>
 
       <article id="start">
         <section className="helloWorld-style-container">
-          <HelloWorld/>
+          <HelloWorld />
 
           <img className="profilePhoto-style" src="images/fotoPrueba.jpg" alt="My face" />
         </section>
-
-        <Skills/>
+        
+        <Skills />
       </article>
 
       <article id="projects">
@@ -35,12 +36,12 @@ function App() {
         <h2>Contacto</h2>
 
         <section>
-          <EmailForm/>
+          <EmailForm />
 
           <div>
-            <Networks/> 
+            <Networks /> 
 
-            <Location/>
+            <Location />
           </div>
         </section>
       </article>
