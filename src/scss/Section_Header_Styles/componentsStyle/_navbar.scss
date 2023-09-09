@@ -3,13 +3,19 @@ nav {
     justify-content: space-between;
     border-radius: 12px;
     background: linear-gradient(to right, #2d618e, #3a3144);
-    box-shadow:  
-    10px 10px 10px #0c0c0c;
-    width: 80%;
+    box-shadow: 10px 10px 10px #0c0c0c;
+    width: 85%;
     padding: 0.8rem;
     align-items: center;
     margin-top: 1rem;
-    // position: fixed;
+    z-index: 1;
+
+    @media only screen and (max-width:768px) {
+        width: 100%;
+        margin-top: 0;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0px 10px 10px #0c0c0c;
+    }
 
     .icon-code {
         
@@ -43,5 +49,42 @@ nav {
                 }
             }
         }
+    }
+
+    button {
+        @media only screen and (min-width:768px) {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+
+        .menu-closed {
+            position: absolute;
+            top: -700px;
+            left: -2000px;
+            margin-left: auto;
+            margin-right: auto;   
+        }
+
+        .menu-background-none {
+            position: absolute;
+            background-color: blue;
+        }
+
+        .menu-open {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            top: 30%;
+            left: 0;
+            right: 0;
+        }
+
+        .menu-background {}
+        
     }
 }

@@ -13061,10 +13061,19 @@ body header nav {
   border-radius: 12px;
   background: linear-gradient(to right, #2d618e, #3a3144);
   box-shadow: 10px 10px 10px #0c0c0c;
-  width: 80%;
+  width: 85%;
   padding: 0.8rem;
   align-items: center;
   margin-top: 1rem;
+  z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  body header nav {
+    width: 100%;
+    margin-top: 0;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0px 10px 10px #0c0c0c;
+  }
 }
 body header nav .icon-code svg {
   height: 2.5rem;
@@ -13084,6 +13093,35 @@ body header nav ul li span {
 }
 body header nav ul li span:hover {
   text-shadow: 0 0 5px #0088ff, 0 0 10px #0088ff, 0 0 15px #0088ff, 0 0 20px #0088ff, 0 0 25px #0088ff, 0 0 30px #0088ff, 0 0 35px #0088ff;
+}
+@media only screen and (min-width: 768px) {
+  body header nav button {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body header nav .menu-closed {
+    position: absolute;
+    top: -700px;
+    left: -2000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body header nav .menu-background-none {
+    position: absolute;
+    background-color: blue;
+  }
+  body header nav .menu-open {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+    left: 0;
+    right: 0;
+  }
 }
 body #start {
   display: flex;
