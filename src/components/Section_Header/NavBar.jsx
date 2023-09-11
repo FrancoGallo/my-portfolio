@@ -1,17 +1,18 @@
 import { useState } from 'react'
 
-function scrollToSection(sectionId) {
-  const element = document.getElementById(sectionId);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-}
-
 const NavBar = () => {
   const [menu, setMenu] = useState(false)
 
   const showMenu = () => {
     setMenu(!menu)
+  }
+
+  function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      showMenu()
+    }
   }
 
   return (
@@ -30,7 +31,7 @@ const NavBar = () => {
 
         <button onClick={showMenu}>BOTON</button>
 
-        <div className={menu ? 'menu-background' : 'menu-background-none'}></div>
+        <div className={`menu-background ${menu ? 'active' : ''}`}></div>
     </nav>
   )
 }

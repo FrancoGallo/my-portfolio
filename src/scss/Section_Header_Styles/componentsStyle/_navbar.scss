@@ -8,7 +8,6 @@ nav {
     padding: 0.8rem;
     align-items: center;
     margin-top: 1rem;
-    z-index: 1;
 
     @media only screen and (max-width:768px) {
         width: 100%;
@@ -64,12 +63,19 @@ nav {
             top: -700px;
             left: -2000px;
             margin-left: auto;
-            margin-right: auto;   
+            margin-right: auto;
+            transition: all .5s ease;   
         }
 
-        .menu-background-none {
+        .menu-background {
             position: absolute;
             background-color: blue;
+            top: -700px;
+            left: -1000px;
+            width: 100%;
+            height: 100%;
+            transition: all .6s ease;
+            z-index: -1;
         }
 
         .menu-open {
@@ -82,9 +88,16 @@ nav {
             top: 30%;
             left: 0;
             right: 0;
+            transition: all .5s ease;
         }
 
-        .menu-background {}
+        .active {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0 0 80% 0;
+        }
         
     }
 }
