@@ -23,15 +23,21 @@ const NavBar = () => {
           </svg>
         </div>
         
-        <ul className={menu ? 'menu-open' : 'menu-closed'}>
-          <li><span onClick={() => scrollToSection("start")}>Doc</span></li>
-          <li><span onClick={() => scrollToSection("projects")}>Proyectos</span></li>
-          <li><span onClick={() => scrollToSection("contact")}>Contacto</span></li>
+        <ul className={`menu-responsive ${menu && 'active'}`}>
+          <li onClick={() => scrollToSection("start")}><span>Doc</span></li>
+          <li onClick={() => scrollToSection("projects")}><span >Proyectos</span></li>
+          <li onClick={() => scrollToSection("contact")}><span >Contacto</span></li>
         </ul> 
 
-        <button onClick={showMenu}>BOTON</button>
+        {/* <button onClick={showMenu}>BOTON</button> */}
 
-        <div className={`menu-background ${menu ? 'active' : ''}`}></div>
+        <div className='menu__wrapper' onClick={showMenu}>
+          <div className='menu__item--hamburger'>
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+          </div>
+        </div>
     </nav>
   )
 }
