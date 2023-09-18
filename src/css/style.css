@@ -13065,6 +13065,7 @@ body header nav {
   padding: 0.8rem;
   align-items: center;
   margin-top: 1rem;
+  z-index: 2;
 }
 @media only screen and (max-width: 768px) {
   body header nav {
@@ -13095,49 +13096,51 @@ body header nav ul li span {
 body header nav ul li span:hover {
   text-shadow: 0 0 5px #0088ff, 0 0 10px #0088ff, 0 0 15px #0088ff, 0 0 20px #0088ff, 0 0 25px #0088ff, 0 0 30px #0088ff, 0 0 35px #0088ff;
 }
-@media only screen and (min-width: 768px) {
-  body header nav button {
-    display: none;
-  }
-}
-body header nav .menu__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-@media only screen and (min-width: 768px) {
-  body header nav .menu__wrapper {
-    display: none;
-  }
-}
-body header nav .menu__wrapper .menu__item--hamburger {
-  width: 100px;
-  height: 60px;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+body header nav .icon-nav {
+  width: 35px;
+  height: 30px;
+  margin: 10px 10px;
+  position: relative;
   cursor: pointer;
-  outline: none;
+  display: inline-block;
 }
-body header nav .menu__wrapper .menu__item--hamburger:active .line:nth-child(1) {
-  transform: rotate(45deg) translate(12px, 12px);
+@media only screen and (min-width: 768px) {
+  body header nav .icon-nav {
+    display: none;
+  }
 }
-body header nav .menu__wrapper .menu__item--hamburger:active .line:nth-child(2) {
-  visibility: hidden;
+body header nav .icon-nav span {
+  background-color: #fff;
+  position: absolute;
+  border-radius: 2px;
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  width: 100%;
+  height: 4px;
+  transition-duration: 400ms;
 }
-body header nav .menu__wrapper .menu__item--hamburger:active .line:nth-child(3) {
-  transform: rotate(-45deg) translate(15px, -16px);
+body header nav .icon-nav span:nth-child(1) {
+  top: 0px;
+  left: 0px;
 }
-body header nav .menu__wrapper .menu__item--hamburger .line {
-  height: 8px;
-  width: 45px;
-  background: #fff;
-  margin: 5px auto;
-  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+body header nav .icon-nav span:nth-child(2) {
+  top: 13px;
+  left: 0px;
+  opacity: 1;
+}
+body header nav .icon-nav span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+}
+body header nav .open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 13px;
+}
+body header nav .open span:nth-child(2) {
+  opacity: 0;
+}
+body header nav .open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 13px;
 }
 @media only screen and (max-width: 768px) {
   body header nav .menu-responsive {

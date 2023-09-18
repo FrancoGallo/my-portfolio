@@ -31,12 +31,10 @@ const NavBar = () => {
 
         {/* <button onClick={showMenu}>BOTON</button> */}
 
-        <div className='menu__wrapper' onClick={showMenu}>
-          <div className='menu__item--hamburger'>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-          </div>
+        <div class={`icon-nav ${menu && 'open'}`} onClick={showMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
     </nav>
   )

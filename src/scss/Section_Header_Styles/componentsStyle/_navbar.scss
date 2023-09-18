@@ -8,6 +8,7 @@ nav {
     padding: 0.8rem;
     align-items: center;
     margin-top: 1rem;
+    z-index: 2;
 
     @media only screen and (max-width:768px) {
         width: 100%;
@@ -49,12 +50,6 @@ nav {
                         0 0 35px #0088ff;
                 }
             }
-        }
-    }
-
-    button {
-        @media only screen and (min-width:768px) {
-            display: none;
         }
     }
 
