@@ -4,8 +4,10 @@ footer {
     align-items: center;
     background: linear-gradient(to right, #2d618e, #3a3144);
     padding: 15px 0 15px 0;
+    flex-wrap: wrap;
   
     .icon-code {
+      padding: 1rem;
 
       svg {
         height: 3.5rem;
@@ -13,11 +15,17 @@ footer {
       }
     }
   
-    section{
+    .socialNetwork-container {
       display: grid;
       grid-template-columns: auto auto;
 
-      .socialNetwork-container {
+      @media only screen and (max-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .socialNetwork {
         display: flex;
         padding: 0.5rem;
 

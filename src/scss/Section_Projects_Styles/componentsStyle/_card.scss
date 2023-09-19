@@ -6,6 +6,15 @@
     10px 10px 10px #0c0c0c;
     width: 80%;
     margin: 2rem 0 2rem 0;
+    flex-wrap: wrap;
+
+    @media only screen and (min-width:426px) and (max-width:768px) {
+        width: 85%;
+    }
+
+    @media only screen and (max-width:426px) {
+        width: 90%;
+    }
 
     .image-style {
         padding: 1rem;
@@ -14,6 +23,10 @@
             height: 100%;
             width: 25rem;
             border-radius: 12px;
+
+            @media only screen and (max-width:768px) {
+                width: 100%;
+            }
         } 
     }
     

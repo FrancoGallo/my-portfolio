@@ -13112,7 +13112,7 @@ body header nav .icon-nav {
 body header nav .icon-nav span {
   background-color: #fff;
   position: absolute;
-  border-radius: 2px;
+  border-radius: 12px;
   transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   width: 100%;
   height: 4px;
@@ -13191,6 +13191,7 @@ body #start {
 body #start .helloWorld-style-container {
   display: flex;
   width: 80%;
+  flex-wrap: wrap;
 }
 body #start .helloWorld-style-container .helloWorld-style {
   margin: 1rem;
@@ -13376,6 +13377,17 @@ body #projects .card-style-container {
   box-shadow: 10px 10px 10px #0c0c0c;
   width: 80%;
   margin: 2rem 0 2rem 0;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  body #projects .card-style-container {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 426px) {
+  body #projects .card-style-container {
+    width: 90%;
+  }
 }
 body #projects .card-style-container .image-style {
   padding: 1rem;
@@ -13384,6 +13396,11 @@ body #projects .card-style-container .image-style img {
   height: 100%;
   width: 25rem;
   border-radius: 12px;
+}
+@media only screen and (max-width: 768px) {
+  body #projects .card-style-container .image-style img {
+    width: 100%;
+  }
 }
 body #projects .card-style-container .description-style {
   display: flex;
@@ -13510,19 +13527,15 @@ body #contact section {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  padding: 2rem 0 2rem 0;
+  padding-top: 2rem;
+  flex-wrap: wrap;
 }
 body #contact section .form-style-container {
   border-radius: 12px;
   background-color: #1c1c1c;
   box-shadow: 10px 10px 10px #0c0c0c;
   width: 30rem;
-  padding: 0;
-}
-body #contact section .form-style-container img {
-  position: absolute;
-  width: inherit;
-  z-index: 1;
+  margin-bottom: 2rem;
 }
 body #contact section .form-style-container form {
   display: flex;
@@ -13532,6 +13545,15 @@ body #contact section .form-style-container form {
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  position: relative;
+}
+body #contact section .form-style-container form img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 body #contact section .form-style-container form .input-style {
   display: flex;
@@ -13581,6 +13603,7 @@ body #contact section div {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  padding-bottom: 2rem;
 }
 body #contact section div ul li {
   list-style: none;
@@ -13641,26 +13664,47 @@ body #contact section div .location-style iframe {
   border-radius: 12px;
   box-shadow: 10px 10px 10px #0c0c0c;
 }
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  body #contact section div .location-style iframe {
+    width: 85vw;
+  }
+}
+@media only screen and (max-width: 426px) {
+  body #contact section div .location-style iframe {
+    width: 90vw;
+  }
+}
 body footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: linear-gradient(to right, #2d618e, #3a3144);
   padding: 15px 0 15px 0;
+  flex-wrap: wrap;
+}
+body footer .icon-code {
+  padding: 1rem;
 }
 body footer .icon-code svg {
   height: 3.5rem;
   width: 3.5rem;
 }
-body footer section {
+body footer .socialNetwork-container {
   display: grid;
   grid-template-columns: auto auto;
 }
-body footer section .socialNetwork-container {
+@media only screen and (max-width: 768px) {
+  body footer .socialNetwork-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+body footer .socialNetwork-container .socialNetwork {
   display: flex;
   padding: 0.5rem;
 }
-body footer section .socialNetwork-container a, body footer section .socialNetwork-container .a {
+body footer .socialNetwork-container .socialNetwork a, body footer .socialNetwork-container .socialNetwork .a {
   display: flex;
   align-items: center;
   text-align: center;
@@ -13668,12 +13712,12 @@ body footer section .socialNetwork-container a, body footer section .socialNetwo
   text-decoration: none;
   width: auto;
 }
-body footer section .socialNetwork-container a svg, body footer section .socialNetwork-container .a svg {
+body footer .socialNetwork-container .socialNetwork a svg, body footer .socialNetwork-container .socialNetwork .a svg {
   height: 1.5rem;
   width: 1.5rem;
   margin-right: 0.5rem;
 }
-body footer section .socialNetwork-container a span, body footer section .socialNetwork-container .a span {
+body footer .socialNetwork-container .socialNetwork a span, body footer .socialNetwork-container .socialNetwork .a span {
   font: 0.8rem "Poppins", sans-serif;
 }
 

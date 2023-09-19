@@ -75,8 +75,8 @@ const EmailForm = () => {
     >
       {({ errors }) => (
         <div className='form-style-container'>
-          <img src="images/cintas.png" alt="" />
           <Form>
+            <img src="images/cintas.png" alt="" />
           {/* <form ref={form} onSubmit={sendEmail}> */}
             <div className='input-style'>
               <label for="input">Nombre/s:</label>

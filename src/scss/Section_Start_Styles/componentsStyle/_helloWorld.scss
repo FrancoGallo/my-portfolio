@@ -1,6 +1,7 @@
 .helloWorld-style-container {
     display: flex;
     width: 80%;
+    flex-wrap: wrap;
     
     .helloWorld-style {
       margin: 1rem;
