@@ -13191,7 +13191,11 @@ body #start {
 body #start .helloWorld-style-container {
   display: flex;
   width: 80%;
-  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  body #start .helloWorld-style-container {
+    flex-wrap: wrap;
+  }
 }
 body #start .helloWorld-style-container .helloWorld-style {
   margin: 1rem;
@@ -13257,10 +13261,24 @@ body #start .helloWorld-style-container .helloWorld-style .modal-container {
 body #start .helloWorld-style-container .helloWorld-style .modal-container .slider-container {
   width: 65%;
 }
+@media only screen and (max-width: 768px) {
+  body #start .helloWorld-style-container .helloWorld-style .modal-container .slider-container {
+    width: 100%;
+  }
+}
 body #start .helloWorld-style-container .helloWorld-style .modal-container .slider-container img {
   width: 100%;
   height: 90vh;
   border-radius: 12px;
+}
+@media only screen and (max-width: 768px) {
+  body #start .helloWorld-style-container .helloWorld-style .modal-container .slider-container img {
+    height: 100vh;
+  }
+}
+body #start .helloWorld-style-container .helloWorld-style .modal-container .slider-container a {
+  height: 3rem;
+  top: 50%;
 }
 body #start .helloWorld-style-container .helloWorld-style .modal-container .btn-close-modal {
   position: absolute;
@@ -13283,7 +13301,14 @@ body #start .helloWorld-style-container .helloWorld-style .modal-container .btn-
   width: 100%;
   height: 100%;
 }
-body #start .helloWorld-style-container .profilePhoto-style {
+@media only screen and (max-width: 768px) {
+  body #start .helloWorld-style-container .profilePhoto-container {
+    display: grid;
+    place-content: center;
+    width: 100%;
+  }
+}
+body #start .helloWorld-style-container .profilePhoto-container .profilePhoto {
   width: 20rem;
   height: 20rem;
   margin: 1rem;
@@ -13377,16 +13402,17 @@ body #projects .card-style-container {
   box-shadow: 10px 10px 10px #0c0c0c;
   width: 80%;
   margin: 2rem 0 2rem 0;
-  flex-wrap: wrap;
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   body #projects .card-style-container {
     width: 85%;
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 426px) {
   body #projects .card-style-container {
     width: 90%;
+    flex-wrap: wrap;
   }
 }
 body #projects .card-style-container .image-style {
@@ -13412,6 +13438,11 @@ body #projects .card-style-container .description-style .btn-container {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+@media only screen and (max-width: 768px) {
+  body #projects .card-style-container .description-style .btn-container {
+    justify-content: space-between;
+  }
 }
 body #projects .card-style-container .description-style .btn-container .btn-linkProject {
   display: flex;
@@ -13459,6 +13490,11 @@ body #projects .card-style-container .description-style .btn-container .btn-link
   text-decoration: none;
   font-family: "ADLaM Display", cursive;
 }
+@media only screen and (max-width: 426px) {
+  body #projects .card-style-container .description-style .btn-container .btn-linkProject span span {
+    display: none;
+  }
+}
 body #projects .card-style-container .description-style .btn-container .btn-gitHub {
   display: flex;
   padding: 0.5rem;
@@ -13499,6 +13535,11 @@ body #projects .card-style-container .description-style .btn-container .btn-gitH
 body #projects .card-style-container .description-style .btn-container .btn-gitHub span {
   color: #959595;
   font-family: "ADLaM Display", cursive;
+}
+@media only screen and (max-width: 426px) {
+  body #projects .card-style-container .description-style .btn-container .btn-gitHub span span {
+    display: none;
+  }
 }
 body #projects .card-style-container .text-style {
   margin: 2.5rem 0 2rem 0;

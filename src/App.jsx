@@ -19,7 +19,9 @@ function App() {
         <section className="helloWorld-style-container">
           <HelloWorld />
 
-          <img className="profilePhoto-style" src="images/fotoPrueba.jpg" alt="My face" />
+          <div className="profilePhoto-container">
+            <img className="profilePhoto" src="images/fotoPrueba.jpg" alt="My face" />
+          </div>
         </section>
         
         <Skills />

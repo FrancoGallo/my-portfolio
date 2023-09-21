@@ -54,5 +54,11 @@
     span {
         color: #959595;
         font-family: 'ADLaM Display', cursive;
+
+        @media only screen and (max-width:426px) {
+            span {
+                display: none;
+            }
+        }
     }
 }

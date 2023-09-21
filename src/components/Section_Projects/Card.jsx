@@ -49,7 +49,10 @@ const Card = () => {
                     </svg>
                   </div>
 
-                  <span>Enlace al Proyecto</span>
+                  <span>
+                    <span>Enlace al </span>
+                    Proyecto
+                  </span>
                 </a>
 
                 <a href={data.codeUrl} className='btn-gitHub' target="_blank" rel="noreferrer">
@@ -59,7 +62,10 @@ const Card = () => {
                     </svg>
                   </div>
 
-                  <span>Enlace al GitHub</span>
+                  <span>
+                    <span>Enlace al </span>
+                    GitHub
+                  </span>
                 </a>
               </div>
               

@@ -1,7 +1,10 @@
 .helloWorld-style-container {
     display: flex;
     width: 80%;
-    flex-wrap: wrap;
+
+    @media only screen and (max-width:768px) {
+      flex-wrap: wrap;
+    }
     
     .helloWorld-style {
       margin: 1rem;
@@ -19,12 +22,21 @@
       @import "customModal";
     }
 
-    .profilePhoto-style {
-      width: 20rem;
-      height: 20rem;
-      margin: 1rem;
-      border-radius: 170px;
-      background-color: #1c1c1c;
-      box-shadow: 15px 15px 10px #0c0c0c;
-    } 
+    .profilePhoto-container {
+
+      @media only screen and (max-width:768px) {
+        display: grid;
+        place-content: center;
+        width: 100%;
+      }
+      
+      .profilePhoto {
+        width: 20rem;
+        height: 20rem;
+        margin: 1rem;
+        border-radius: 170px;
+        background-color: #1c1c1c;
+        box-shadow: 15px 15px 10px #0c0c0c;
+      } 
+    }
 }
