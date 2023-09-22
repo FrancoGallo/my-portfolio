@@ -1,0 +1,38 @@
+.arrow {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 2rem;
+    
+    span {
+        position: absolute;
+        width: 50%;
+        height: 0.3rem;
+        background-color: #ffffff;
+        border-radius: 12px;
+        transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    }
+
+    span:nth-child(1) {
+        top: 40%;
+        left: 3px;
+        transform: rotate(-30deg);
+    }
+
+    span:nth-child(2) {
+        top: 40%;
+        right: 3px;
+        transform: rotate(30deg);
+    }
+}
+
+.open {
+
+    span:nth-child(1) {
+        transform: rotate(30deg);
+    }
+
+    span:nth-child(2) {
+        transform: rotate(-30deg);
+    }
+}

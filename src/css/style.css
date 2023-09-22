@@ -13145,17 +13145,17 @@ body header nav .open span:nth-child(3) {
 @media only screen and (max-width: 768px) {
   body header nav .menu-responsive {
     position: absolute;
-    top: 4.5rem;
-    right: -17rem;
-    height: 17rem;
-    width: 16rem;
+    top: 5.5rem;
+    right: -20rem;
+    height: 20rem;
+    width: 17rem;
     transition: all 400ms ease;
     border-radius: 12px 0 0 12px;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 1rem 0 1rem 0;
-    background-color: #1c1c1c;
+    background-color: rgba(28, 28, 28, 0.95);
     box-shadow: -10px 10px 10px #0c0c0c;
   }
   body header nav .menu-responsive li span {
@@ -13165,6 +13165,7 @@ body header nav .open span:nth-child(3) {
     padding: 0.5rem 2rem;
     box-shadow: 10px 10px 10px #0c0c0c;
     background-color: #2d618e;
+    font-size: 1.5rem;
   }
   body header nav .menu-responsive li span:hover {
     text-shadow: none;
@@ -13261,7 +13262,7 @@ body #start .helloWorld-style-container .helloWorld-style .modal-container {
 body #start .helloWorld-style-container .helloWorld-style .modal-container .slider-container {
   width: 65%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 830px) {
   body #start .helloWorld-style-container .helloWorld-style .modal-container .slider-container {
     width: 100%;
   }
@@ -13270,11 +13271,6 @@ body #start .helloWorld-style-container .helloWorld-style .modal-container .slid
   width: 100%;
   height: 90vh;
   border-radius: 12px;
-}
-@media only screen and (max-width: 768px) {
-  body #start .helloWorld-style-container .helloWorld-style .modal-container .slider-container img {
-    height: 100vh;
-  }
 }
 body #start .helloWorld-style-container .helloWorld-style .modal-container .slider-container a {
   height: 3rem;
@@ -13288,6 +13284,11 @@ body #start .helloWorld-style-container .helloWorld-style .modal-container .btn-
   height: 3rem;
   border-radius: 12px;
   cursor: pointer;
+}
+@media only screen and (max-width: 830px) {
+  body #start .helloWorld-style-container .helloWorld-style .modal-container .btn-close-modal {
+    top: 3rem;
+  }
 }
 body #start .helloWorld-style-container .helloWorld-style .modal-container .btn-close-modal:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -13316,6 +13317,12 @@ body #start .helloWorld-style-container .profilePhoto-container .profilePhoto {
   background-color: #1c1c1c;
   box-shadow: 15px 15px 10px #0c0c0c;
 }
+@media only screen and (max-width: 426px) {
+  body #start .helloWorld-style-container .profilePhoto-container .profilePhoto {
+    width: 15rem;
+    height: 15rem;
+  }
+}
 body #start .skills-container {
   border-radius: 12px;
   background-color: #1c1c1c;
@@ -13334,20 +13341,38 @@ body #start .skills-container .skills-btn:hover {
   background-color: #222222;
   border-radius: 12px;
 }
-body #start .skills-container .skills-btn svg {
-  height: 1.5rem;
-  width: 1.5rem;
-  transition: 0.3s;
+body #start .skills-container .skills-btn .arrow {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 2rem;
 }
-body #start .skills-container .skills-btn .svg {
-  transform: rotate(180deg);
+body #start .skills-container .skills-btn .arrow span {
+  position: absolute;
+  width: 50%;
+  height: 0.3rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
 }
-body #start .skills-container .skills-btn .left-arrow {
-  transform: rotate(180deg);
-  transition: 0.3s;
+body #start .skills-container .skills-btn .arrow span:nth-child(1) {
+  top: 40%;
+  left: 3px;
+  transform: rotate(-30deg);
 }
-body #start .skills-container .skills-btn .right-arrow {
-  transform: rotate(0);
+body #start .skills-container .skills-btn .arrow span:nth-child(2) {
+  top: 40%;
+  right: 3px;
+  transform: rotate(30deg);
+}
+body #start .skills-container .skills-btn .open span:nth-child(1) {
+  transform: rotate(30deg);
+}
+body #start .skills-container .skills-btn .open span:nth-child(2) {
+  transform: rotate(-30deg);
+}
+body #start .skills-container .skills-btn h3, body #start .skills-container .skills-btn .h3 {
+  margin: 0 0.5rem;
 }
 body #start .skills-container .skills-content {
   padding: 1rem;
@@ -13403,16 +13428,14 @@ body #projects .card-style-container {
   width: 80%;
   margin: 2rem 0 2rem 0;
 }
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (max-width: 990px) {
   body #projects .card-style-container {
-    width: 85%;
-    flex-wrap: wrap;
+    width: 95%;
   }
 }
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 768px) {
   body #projects .card-style-container {
-    width: 90%;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 body #projects .card-style-container .image-style {
@@ -13431,7 +13454,7 @@ body #projects .card-style-container .image-style img {
 body #projects .card-style-container .description-style {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   justify-content: space-between;
 }
 body #projects .card-style-container .description-style .btn-container {
@@ -13511,7 +13534,7 @@ body #projects .card-style-container .description-style .btn-container .btn-gitH
   border-color: #ffffff;
   box-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #ffffff;
 }
-body #projects .card-style-container .description-style .btn-container .btn-gitHub:hover .icon-gitHub {
+body #projects .card-style-container .description-style .btn-container .btn-gitHub:hover .icon-link {
   color: #ffffff;
 }
 body #projects .card-style-container .description-style .btn-container .btn-gitHub:hover span {
@@ -13522,13 +13545,13 @@ body #projects .card-style-container .description-style .btn-container .btn-gitH
   scale: 0.9;
   transition: 100ms;
 }
-body #projects .card-style-container .description-style .btn-container .btn-gitHub .icon-gitHub {
+body #projects .card-style-container .description-style .btn-container .btn-gitHub .icon-link {
   margin-right: 0.5rem;
   width: 1.5rem;
   height: 1.5rem;
   color: #959595;
 }
-body #projects .card-style-container .description-style .btn-container .btn-gitHub .icon-gitHub svg {
+body #projects .card-style-container .description-style .btn-container .btn-gitHub .icon-link svg {
   width: 100%;
   height: 100%;
 }
@@ -13550,9 +13573,10 @@ body #projects .card-style-container .tools-styles h3, body #projects .card-styl
 body #projects .card-style-container .tools-styles ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 body #projects .card-style-container .tools-styles ul li {
-  margin-right: 1rem;
+  margin: 0 1rem 1rem 0;
 }
 body #projects .card-style-container .tools-styles ul li img {
   height: 2rem;
@@ -13577,6 +13601,11 @@ body #contact section .form-style-container {
   box-shadow: 10px 10px 10px #0c0c0c;
   width: 30rem;
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 426px) {
+  body #contact section .form-style-container {
+    width: 90%;
+  }
 }
 body #contact section .form-style-container form {
   display: flex;
@@ -13644,7 +13673,7 @@ body #contact section div {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding-bottom: 2rem;
+  padding: 0 0 2rem 1rem;
 }
 body #contact section div ul li {
   list-style: none;

@@ -6,6 +6,10 @@
     width: 30rem;
     margin-bottom: 2rem;
 
+    @media only screen and (max-width:426px) {
+        width: 90%;
+    }
+
     form {
         display: flex;
         flex-direction: column;

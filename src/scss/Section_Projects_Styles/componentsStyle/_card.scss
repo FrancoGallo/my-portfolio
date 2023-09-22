@@ -7,14 +7,12 @@
     width: 80%;
     margin: 2rem 0 2rem 0;
 
-    @media only screen and (min-width:426px) and (max-width:768px) {
-        width: 85%;
-        flex-wrap: wrap;
+    @media only screen and (max-width:990px) {
+        width: 95%;
     }
 
-    @media only screen and (max-width:426px) {
-        width: 90%;
-        flex-wrap: wrap;
+    @media only screen and (max-width:768px) {
+        flex-direction: column;
     }
 
     .image-style {
@@ -34,7 +32,7 @@
     .description-style {
         display: flex;
         flex-direction: column;
-        padding: 1rem;
+        padding: 1rem 1rem 0 1rem;
         justify-content: space-between;
 
         .btn-container {
@@ -65,9 +63,10 @@
             ul {
                 list-style: none;
                 display: flex;
+                flex-wrap: wrap;
 
                 li {
-                    margin-right: 1rem;
+                    margin: 0 1rem 1rem 0;
 
                     img {
                         height: 2rem;

@@ -18,25 +18,12 @@
             border-radius: 12px;
         }
 
-        svg {
-            height: 1.5rem;
-            width: 1.5rem;
-            transition: 0.3s;
-        }
+        @import 'arrowSkills';
 
-        .svg {
-            transform: rotate(180deg);
-        }
-
-        .left-arrow {
-            transform: rotate(180deg);
-            transition: 0.3s;
-        }
-
-        .right-arrow {
-            transform: rotate(0);
+        h3 {
+            margin: 0 0.5rem;
         }
     }
 
-    @import 'skills-content';
+    @import 'skillsContent';
 }
