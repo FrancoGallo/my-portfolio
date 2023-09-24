@@ -1,12 +1,15 @@
 ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1rem;
 
     li {
         list-style: none;
 
         a {
             color: #ffffff;
-            display: flex;
-            align-items: center;
+            display: inline-block;
             text-decoration: none;
             margin-bottom: 1rem;
 

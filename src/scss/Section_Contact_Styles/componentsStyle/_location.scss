@@ -1,5 +1,8 @@
 .location-style {
-    padding: 0.5rem;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
 
     h3 {
         margin-bottom: 0.5rem;

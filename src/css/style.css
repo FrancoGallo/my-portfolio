@@ -13443,7 +13443,7 @@ body #projects .card-style-container .image-style {
 }
 body #projects .card-style-container .image-style img {
   height: 100%;
-  width: 25rem;
+  width: 30rem;
   border-radius: 12px;
 }
 @media only screen and (max-width: 768px) {
@@ -13601,6 +13601,7 @@ body #contact section .form-style-container {
   box-shadow: 10px 10px 10px #0c0c0c;
   width: 30rem;
   margin-bottom: 2rem;
+  display: none;
 }
 @media only screen and (max-width: 426px) {
   body #contact section .form-style-container {
@@ -13616,14 +13617,6 @@ body #contact section .form-style-container form {
   width: 100%;
   align-items: center;
   position: relative;
-}
-body #contact section .form-style-container form img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
 }
 body #contact section .form-style-container form .input-style {
   display: flex;
@@ -13671,17 +13664,20 @@ body #contact section .form-style-container form .submitted-form-style {
 }
 body #contact section div {
   display: flex;
-  justify-content: space-between;
+  margin: 1rem;
+}
+body #contact section div ul {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
-  padding: 0 0 2rem 1rem;
+  padding: 0 1rem;
 }
 body #contact section div ul li {
   list-style: none;
 }
 body #contact section div ul li a {
   color: #ffffff;
-  display: flex;
-  align-items: center;
+  display: inline-block;
   text-decoration: none;
   margin-bottom: 1rem;
 }
@@ -13723,7 +13719,10 @@ body #contact section div ul li a .text-github:hover {
   text-shadow: 0 0 5px #000000, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff;
 }
 body #contact section div .location-style {
-  padding: 0.5rem;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 body #contact section div .location-style h3, body #contact section div .location-style .h3 {
   margin-bottom: 0.5rem;

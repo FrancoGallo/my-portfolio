@@ -15,9 +15,10 @@
   
       div {
         display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 0 0 2rem 1rem;
+        // justify-content: space-between;
+        // flex-direction: column;
+        // padding: 0 0 2rem 1rem;
+        margin: 1rem;
   
         @import "componentsStyle/networks";
   
