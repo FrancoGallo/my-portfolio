@@ -13183,6 +13183,7 @@ body #start {
   align-items: center;
   padding: 1rem 0 1rem 0;
   margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 @media only screen and (max-width: 768px) {
   body #start {
@@ -13419,6 +13420,7 @@ body #projects {
   flex-direction: column;
   align-items: center;
   margin-bottom: 4rem;
+  margin-top: 5rem;
 }
 body #projects .card-style-container {
   display: flex;
@@ -13426,14 +13428,14 @@ body #projects .card-style-container {
   background-color: #1c1c1c;
   box-shadow: 10px 10px 10px #0c0c0c;
   width: 80%;
-  margin: 2rem 0 2rem 0;
+  margin: 3rem 0;
 }
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1000px) {
   body #projects .card-style-container {
-    width: 95%;
+    width: 90%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 915px) {
   body #projects .card-style-container {
     flex-direction: column;
   }
@@ -13446,7 +13448,7 @@ body #projects .card-style-container .image-style img {
   width: 30rem;
   border-radius: 12px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 915px) {
   body #projects .card-style-container .image-style img {
     width: 100%;
   }
@@ -13462,7 +13464,7 @@ body #projects .card-style-container .description-style .btn-container {
   display: flex;
   justify-content: flex-end;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 915px) {
   body #projects .card-style-container .description-style .btn-container {
     justify-content: space-between;
   }
@@ -13591,7 +13593,7 @@ body #contact {
 body #contact section {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-top: 2rem;
   flex-wrap: wrap;
 }
@@ -13662,84 +13664,80 @@ body #contact section .form-style-container form Button:hover {
 body #contact section .form-style-container form .submitted-form-style {
   color: #00df00;
 }
-body #contact section div {
-  display: flex;
-  margin: 1rem;
-}
-body #contact section div ul {
+body #contact section ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 0 1rem;
 }
-body #contact section div ul li {
+body #contact section ul li {
   list-style: none;
 }
-body #contact section div ul li a {
+body #contact section ul li a {
   color: #ffffff;
   display: inline-block;
   text-decoration: none;
   margin-bottom: 1rem;
 }
-body #contact section div ul li a svg {
+body #contact section ul li a svg {
   height: 1.5rem;
   width: 1.5rem;
   margin-right: 0.8rem;
 }
-body #contact section div ul li a .icon-whatsapp {
+body #contact section ul li a .icon-whatsapp {
   color: #25D366;
 }
-body #contact section div ul li a .icon-email {
+body #contact section ul li a .icon-email {
   color: #E84F4B;
 }
-body #contact section div ul li a .icon-linkedin {
+body #contact section ul li a .icon-linkedin {
   color: #0A66C2;
 }
-body #contact section div ul li a .icon-instagram {
+body #contact section ul li a .icon-instagram {
   color: #d87093;
 }
-body #contact section div ul li a .text-whatsapp:hover {
+body #contact section ul li a .text-whatsapp:hover {
   transition: 100ms;
   text-shadow: 0 0 5px #25D366, 0 0 10px #25D366, 0 0 15px #25D366;
 }
-body #contact section div ul li a .text-email:hover {
+body #contact section ul li a .text-email:hover {
   transition: 100ms;
   text-shadow: 0 0 5px #E84F4B, 0 0 10px #E84F4B, 0 0 15px #E84F4B;
 }
-body #contact section div ul li a .text-linkedin:hover {
+body #contact section ul li a .text-linkedin:hover {
   transition: 100ms;
   text-shadow: 0 0 5px #0A66C2, 0 0 10px #0A66C2, 0 0 15px #0A66C2;
 }
-body #contact section div ul li a .text-instagram:hover {
+body #contact section ul li a .text-instagram:hover {
   transition: 100ms;
   text-shadow: 0 0 5px #d87093, 0 0 10px #d87093, 0 0 15px #d87093;
 }
-body #contact section div ul li a .text-github:hover {
+body #contact section ul li a .text-github:hover {
   transition: 100ms;
   text-shadow: 0 0 5px #000000, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff;
 }
-body #contact section div .location-style {
+body #contact section .location-style {
   margin: 0;
   padding: 1rem;
   display: flex;
   flex-direction: column;
 }
-body #contact section div .location-style h3, body #contact section div .location-style .h3 {
+body #contact section .location-style h3, body #contact section .location-style .h3 {
   margin-bottom: 0.5rem;
 }
-body #contact section div .location-style iframe {
+body #contact section .location-style iframe {
   height: 15rem;
   width: 25rem;
   border-radius: 12px;
   box-shadow: 10px 10px 10px #0c0c0c;
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-  body #contact section div .location-style iframe {
+  body #contact section .location-style iframe {
     width: 85vw;
   }
 }
 @media only screen and (max-width: 426px) {
-  body #contact section div .location-style iframe {
+  body #contact section .location-style iframe {
     width: 90vw;
   }
 }

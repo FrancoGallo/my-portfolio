@@ -39,11 +39,11 @@ function App() {
         <section>
           <EmailForm />
 
-          <div>
+          {/* <div> */}
             <Networks /> 
 
             <Location />
-          </div>
+          {/* </div> */}
         </section>
       </article>
 

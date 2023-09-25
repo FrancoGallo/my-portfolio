@@ -2,50 +2,43 @@ const skills = [
     {
         name: 'HTML', 
         img: 'images/iconHTML.svg', 
-        porcentaje: '80%', 
-        width: {width:'80%'}
+        percentage: '70%', 
     },
 
     {
         name: 'CSS', 
         img: 'images/iconCSS.svg', 
-        porcentaje: '30%', 
-        width: {width:'30%'}
+        percentage: '70%', 
     },
     
     {
         name: 'SASS', 
         img: 'images/iconSASS.svg', 
-        porcentaje: '30%', 
-        width: {width:'30%'}
+        percentage: '60%', 
     },
     
     {
         name: 'Bootstrap', 
         img: 'images/iconBootstrap.svg', 
-        porcentaje: '30%', 
-        width: {width:'30%'}
+        percentage: '80%', 
     },
     
     {
         name: 'JavaScript', 
         img: 'images/iconJavaScript.svg', 
-        porcentaje: '30%', 
-        width: {width:'30%'}
+        percentage: '50%', 
     },
     
     {
         name: 'React', 
         img: 'images/iconReact.svg', 
-        porcentaje: '30%', 
-        width: {width:'30%'}
+        percentage: '50%', 
     },
     
     {
         name: 'Firebase', 
         img: 'images/iconFirebase.svg', 
-        porcentaje: '30%', 
-        width: {width:'30%'}
+        percentage: '60%', 
     }
 ]
 

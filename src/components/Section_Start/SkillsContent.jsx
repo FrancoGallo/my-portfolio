@@ -18,13 +18,13 @@ const SkillsContent = () => {
     
                 <div className='skills-description'>
                     <div className='loading-bar'>
-                        <div className='loading' style={skill.width}></div>
+                        <div className='loading' style={{ width: skill.percentage }}></div>
                     </div>
     
                     <div className='skill-name'>
                         <span className='name'>{skill.name}</span>
     
-                        <span className='percentage'>{skill.porcentaje}</span>
+                        <span className='percentage'>{skill.percentage}</span>
                     </div>
                 </div>
             </motion.div>
