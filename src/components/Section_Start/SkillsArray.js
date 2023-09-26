@@ -19,7 +19,7 @@ const skills = [
     
     {
         name: 'Bootstrap', 
-        img: 'images/iconBootstrap.svg', 
+        img: 'https://i.imgur.com/50z7lC4.png', 
         percentage: '80%', 
     },
     
@@ -39,6 +39,12 @@ const skills = [
         name: 'Firebase', 
         img: 'images/iconFirebase.svg', 
         percentage: '60%', 
+    },
+
+    {
+        name: 'Git', 
+        img: 'https://i.imgur.com/a2cj0S4.png', 
+        percentage: '30%', 
     }
 ]
 

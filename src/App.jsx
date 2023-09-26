@@ -6,6 +6,9 @@ import HelloWorld from "./components/Section_Start/HelloWorld";
 import NavBar from "./components/Section_Header/NavBar";
 import Location from "./components/Section_Contact/Location";
 import Skills from "./components/Section_Start/Skills";
+import { getFirestoreApp } from "./db/dbFirebase";
+
+getFirestoreApp()
 
 function App() {
   
@@ -20,7 +23,7 @@ function App() {
           <HelloWorld />
 
           <div className="profilePhoto-container">
-            <img className="profilePhoto" src="images/fotoPrueba.jpg" alt="My face" />
+            <img className="profilePhoto" src="images/profilePhoto.jpg" alt="My face" />
           </div>
         </section>
         
