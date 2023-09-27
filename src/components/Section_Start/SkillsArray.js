@@ -1,49 +1,50 @@
 const skills = [
+    
     {
         name: 'HTML', 
-        img: 'images/iconHTML.svg', 
+        img: 'https://i.imgur.com/WcNRki1.png', 
         percentage: '70%', 
     },
 
     {
         name: 'CSS', 
-        img: 'images/iconCSS.svg', 
+        img: 'https://i.imgur.com/gMmtajT.png', 
         percentage: '70%', 
     },
     
     {
         name: 'SASS', 
-        img: 'images/iconSASS.svg', 
+        img: 'https://i.imgur.com/GoynSor.png', 
         percentage: '60%', 
     },
     
     {
         name: 'Bootstrap', 
-        img: 'https://i.imgur.com/50z7lC4.png', 
+        img: 'https://i.imgur.com/IRlvKBF.png', 
         percentage: '80%', 
     },
     
     {
         name: 'JavaScript', 
-        img: 'images/iconJavaScript.svg', 
+        img: 'https://i.imgur.com/FIP7wA0.png', 
         percentage: '50%', 
     },
     
     {
         name: 'React', 
-        img: 'images/iconReact.svg', 
+        img: 'https://i.imgur.com/Cyyys5c.png', 
         percentage: '50%', 
     },
     
     {
         name: 'Firebase', 
-        img: 'images/iconFirebase.svg', 
+        img: 'https://i.imgur.com/QwN4DRS.png', 
         percentage: '60%', 
     },
 
     {
         name: 'Git', 
-        img: 'https://i.imgur.com/a2cj0S4.png', 
+        img: 'https://i.imgur.com/FfQMQwQ.png', 
         percentage: '30%', 
     }
 ]
