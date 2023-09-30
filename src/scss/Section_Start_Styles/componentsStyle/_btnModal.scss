@@ -4,46 +4,46 @@
     .btn-modal {
       padding: 0.6rem;
       border-style: solid;
-      border-color: #2d618e;
+      border-color: nth($colors , 4);
       border-radius: 12px;
       display: flex;
       justify-content: center;
       align-items: center;
       cursor: pointer;
       box-shadow:  
-      10px 10px 10px #0c0c0c;
+      10px 10px 10px nth($colors , 3);
       margin-top: 1rem;
 
       &:hover {
         transition: 200ms;
-        background-color: #2d618e;
+        background-color: nth($colors , 4);
 
         svg {
-            color: #ffffff;
+            color: nth($colors , 13);
         }
 
         span {
-            color: #ffffff;
+            color: nth($colors , 13);
         }
       }
 
       &:active {
         transition: 100ms;
         box-shadow:  
-        inset 5px 5px 10px #0c0c0c;
+        inset 5px 5px 10px nth($colors , 3);
       }
 
       svg {
         margin-right: 0.5rem;
         height: 1.3rem;
         width: 1.3rem;
-        color: #2d618e;
+        color: nth($colors , 4);
       }
 
       span {
         font-family: 'ADLaM Display', cursive;
         font-size: 1.1rem;
-        color: #2d618e;
+        color: nth($colors , 4);
       }
     }
 }

@@ -35,8 +35,8 @@
         height: 20rem;
         margin: 1rem;
         border-radius: 170px;
-        background-color: #1c1c1c;
-        box-shadow: 15px 15px 10px #0c0c0c;
+        background-color: nth($colors , 2);
+        box-shadow: 15px 15px 10px nth($colors , 3);
 
         @media only screen and (max-width:426px) {
           width: 15rem;

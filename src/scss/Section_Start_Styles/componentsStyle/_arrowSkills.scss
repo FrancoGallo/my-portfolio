@@ -8,7 +8,7 @@
         position: absolute;
         width: 50%;
         height: 0.3rem;
-        background-color: #ffffff;
+        background-color: nth($colors , 13);
         border-radius: 12px;
         transition: .3s cubic-bezier(.8, .5, .2, 1.4);
     }

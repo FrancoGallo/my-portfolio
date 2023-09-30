@@ -14,6 +14,7 @@ const SkillsContent = () => {
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.3 }}
             >
+
                 <img src={skill.img} alt={skill.name} />
     
                 <div className='skills-description'>

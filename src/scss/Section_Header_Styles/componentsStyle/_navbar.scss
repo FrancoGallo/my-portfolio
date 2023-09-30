@@ -2,8 +2,8 @@ nav {
     display: flex;
     justify-content: space-between;
     border-radius: 12px;
-    background: linear-gradient(to right, #2d618e, #3a3144);
-    box-shadow: 10px 10px 10px #0c0c0c;
+    background: linear-gradient(to right, nth($colors, 4), #3a3144);
+    box-shadow: 10px 10px 10px nth($colors, 3);
     width: 85%;
     padding: 0.8rem;
     align-items: center;
@@ -14,7 +14,7 @@ nav {
         width: 100%;
         margin-top: 0;
         border-radius: 0 0 12px 12px;
-        box-shadow: 0px 10px 10px #0c0c0c;
+        box-shadow: 0px 10px 10px nth($colors, 3);
         position: fixed;
         padding: 0.5rem 0.8rem;
     }
@@ -24,7 +24,7 @@ nav {
         svg {
             height: 2.5rem;
             width: 2.5rem;
-            color: #ffffff;
+            color: nth($colors , 13);
         }
     }
 
@@ -41,13 +41,13 @@ nav {
 
                 &:hover {
                     text-shadow: 
-                        0 0 5px #0088ff,
-                        0 0 10px #0088ff,
-                        0 0 15px #0088ff,
-                        0 0 20px #0088ff,
-                        0 0 25px #0088ff,
-                        0 0 30px #0088ff,
-                        0 0 35px #0088ff;
+                        0 0 5px nth($colors, 5),
+                        0 0 10px nth($colors, 5),
+                        0 0 15px nth($colors, 5),
+                        0 0 20px nth($colors, 5),
+                        0 0 25px nth($colors, 5),
+                        0 0 30px nth($colors, 5),
+                        0 0 35px nth($colors, 5);
                 }
             }
         }
@@ -70,17 +70,17 @@ nav {
             align-items: center;
             padding: 1rem 0 1rem 0;
             background-color: rgba(28, 28, 28, 0.95);
-            box-shadow: -10px 10px 10px #0c0c0c;
+            box-shadow: -10px 10px 10px nth($colors, 3);
 
             li {
 
                 span {
-                    border-color: #2d618e;
+                    border-color: nth($colors, 4);
                     border-style: solid;
                     border-radius: 12px;
                     padding: 0.5rem 2rem;
-                    box-shadow: 10px 10px 10px #0c0c0c;
-                    background-color: #2d618e;
+                    box-shadow: 10px 10px 10px nth($colors, 3);
+                    background-color: nth($colors, 4);
                     font-size: 1.5rem;
 
                     &:hover {
@@ -88,7 +88,7 @@ nav {
                     }
 
                     &:active {
-                        box-shadow: inset 5px 5px 10px #0c0c0c;
+                        box-shadow: inset 5px 5px 10px nth($colors, 3);
     
                     }
                 }

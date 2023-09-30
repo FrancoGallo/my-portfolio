@@ -9,6 +9,8 @@
 // Sintaxis:
 //      font: (font-weight)  (font-size)/(line-height)  (font-family)
 
+@import 'variables';
+
 * {
     margin: 0;
     padding: 0;
@@ -20,8 +22,8 @@
   }
 
 body {
-  background-color: #1e1e1e;
-  color: #ffffff;
+  background-color: nth($colors, 1);
+  color: nth($colors , 13);
 
   h1 {
     font: 400 3.5rem 'Lilita One', cursive;
@@ -54,7 +56,6 @@ body {
   .modal {
     --bs-modal-padding: 0;
   }
-  
 
   // All sections of the DOM
 

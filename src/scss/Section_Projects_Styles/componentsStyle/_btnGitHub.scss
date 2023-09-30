@@ -2,35 +2,35 @@
     display: flex;
     padding: 0.5rem;
     border-radius: 12px;
-    border-color: #111111;
+    border-color: nth($colors, 6);
     border-style: solid;
     align-items: center;
     cursor: pointer;
     box-shadow:  
-    10px 10px 10px #0c0c0c;
+    10px 10px 10px nth($colors, 3);
     text-decoration: none;
 
     &:hover {
         transition: 200ms;
-        border-color: #ffffff;
+        border-color: nth($colors , 13);
         box-shadow:  
-            0 0 5px #000000,
-            0 0 10px #000000,
-            0 0 15px #000000,
-            0 0 20px #ffffff;
+            0 0 5px nth($colors, 7),
+            0 0 10px nth($colors, 7),
+            0 0 15px nth($colors, 7),
+            0 0 20px nth($colors , 13);
 
         .icon-link {
-            color: #ffffff;
+            color: nth($colors , 13);
         }
 
         span {
-            color: #ffffff;
+            color: nth($colors , 13);
             text-shadow: 
-                0 0 5px #000000,
-                0 0 10px #000000,
-                0 0 15px #000000,
-                0 0 20px #000000,
-                0 0 25px #ffffff;
+                0 0 5px nth($colors, 7),
+                0 0 10px nth($colors, 7),
+                0 0 15px nth($colors, 7),
+                0 0 20px nth($colors, 7),
+                0 0 25px nth($colors , 13);
         }
     }
 
@@ -43,7 +43,7 @@
         margin-right: 0.5rem;
         width: 1.5rem;
         height: 1.5rem;
-        color: #959595;
+        color: nth($colors , 8);
 
         svg {
             width: 100%;
@@ -52,7 +52,7 @@
     }
 
     span {
-        color: #959595;
+        color: nth($colors , 8);
         font-family: 'ADLaM Display', cursive;
 
         @media only screen and (max-width:426px) {

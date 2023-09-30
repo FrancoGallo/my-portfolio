@@ -1,7 +1,7 @@
 .modal-container {
   z-index: 2;
   position: fixed;
-  background-color: #00000034;
+  background-color: rgba(nth($colors , 7), 0.7);
   width: 100%;
   height: 100%;
   top: 0;
@@ -52,7 +52,7 @@
         }
 
         svg {
-          color: #ffffff;
+          color: nth($colors , 13);
           width: 100%;
           height: 100%;
         }

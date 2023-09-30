@@ -2,7 +2,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(to right, #2d618e, #3a3144);
+    background: linear-gradient(to right, nth($colors , 4), #3a3144);
     padding: 15px 0 15px 0;
     flex-wrap: wrap;
   
@@ -33,7 +33,7 @@ footer {
           display: flex;
           align-items: center;
           text-align: center;
-          color: #ffffff;
+          color: nth($colors , 13);
           text-decoration: none;
           width: auto;
   

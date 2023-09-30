@@ -8,7 +8,7 @@ ul {
         list-style: none;
 
         a {
-            color: #ffffff;
+            color: nth($colors , 13);
             display: inline-block;
             text-decoration: none;
             margin-bottom: 1rem;
@@ -20,60 +20,60 @@ ul {
             }
 
             .icon-whatsapp {
-                color: #25D366;
+                color: nth($colors , 9);
             }
 
             .icon-email {
-                color: #E84F4B;
+                color: nth($colors , 10);
             }
 
             .icon-linkedin {
-                color: #0A66C2;
+                color: nth($colors , 11);
             }
 
             .icon-instagram {
-                color: #d87093;
+                color: nth($colors , 12);
             }
 
             .text-whatsapp:hover {
                 transition: 100ms;
                 text-shadow: 
-                    0 0 5px #25D366, 
-                    0 0 10px #25D366, 
-                    0 0 15px #25D366;
+                    0 0 5px nth($colors , 9), 
+                    0 0 10px nth($colors , 9), 
+                    0 0 15px nth($colors , 9);
             }
 
             .text-email:hover {
                 transition: 100ms;
                 text-shadow: 
-                    0 0 5px #E84F4B, 
-                    0 0 10px #E84F4B, 
-                    0 0 15px #E84F4B;
+                    0 0 5px nth($colors , 10), 
+                    0 0 10px nth($colors , 10), 
+                    0 0 15px nth($colors , 10);
             }
 
             .text-linkedin:hover {
                 transition: 100ms;
                 text-shadow: 
-                    0 0 5px #0A66C2, 
-                    0 0 10px #0A66C2, 
-                    0 0 15px #0A66C2;
+                    0 0 5px nth($colors , 11), 
+                    0 0 10px nth($colors , 11), 
+                    0 0 15px nth($colors , 11);
             }
 
             .text-instagram:hover {
                 transition: 100ms;
                 text-shadow: 
-                    0 0 5px #d87093, 
-                    0 0 10px #d87093, 
-                    0 0 15px #d87093;
+                    0 0 5px nth($colors , 12), 
+                    0 0 10px nth($colors , 12), 
+                    0 0 15px nth($colors , 12);
             }
 
             .text-github:hover {
                 transition: 100ms;
                 text-shadow: 
-                    0 0 5px #000000, 
-                    0 0 10px #ffffff,
-                    0 0 15px #ffffff,
-                    0 0 20px #ffffff;
+                    0 0 5px nth($colors , 7), 
+                    0 0 10px nth($colors , 13),
+                    0 0 15px nth($colors , 13),
+                    0 0 20px nth($colors , 13);
             }
         }
     }

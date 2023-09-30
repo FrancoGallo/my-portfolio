@@ -77,10 +77,6 @@ const Card = () => {
 
                 <ul>
                   <li><img src={data.img} alt="" /></li>
-                  <li><img src={data.img} alt="" /></li>
-                  <li><img src={data.img} alt="" /></li>
-                  <li><img src={data.img} alt="" /></li>
-                  <li><img src={data.img} alt="" /></li>
                 </ul>
               </div>              
             </div>
