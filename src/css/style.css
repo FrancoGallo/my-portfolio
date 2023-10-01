@@ -13026,7 +13026,9 @@ body {
   color: #ffffff;
 }
 body h1, body .h1 {
-  font: 400 3.5rem "Lilita One", cursive;
+  font-family: "Lilita One", cursive;
+  font-weight: 400;
+  font-size: 3.5rem;
 }
 body h2, body .h2 {
   font-family: "Poppins", sans-serif;
@@ -13041,7 +13043,9 @@ body h3, body .h3 {
   margin: 0;
 }
 body p, body li {
-  font: 400 1rem/1.5 "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.8rem;
   margin: 0;
 }
 body ul {
@@ -13054,20 +13058,21 @@ body .modal {
 body header {
   display: flex;
   justify-content: center;
+  align-items: none;
 }
 body header nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-radius: 12px;
   background: linear-gradient(to right, #2d618e, #3a3144);
   box-shadow: 10px 10px 10px #0c0c0c;
   width: 85%;
   padding: 0.8rem;
-  align-items: center;
   margin-top: 1rem;
   z-index: 2;
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body header nav {
     width: 100%;
     margin-top: 0;
@@ -13084,6 +13089,8 @@ body header nav .icon-code svg {
 }
 body header nav ul {
   display: flex;
+  justify-content: none;
+  align-items: none;
 }
 body header nav ul li {
   padding: 0 2rem 0 2rem;
@@ -13091,7 +13098,9 @@ body header nav ul li {
 }
 body header nav ul li span {
   cursor: pointer;
-  font: 400 1.3rem "ADLaM Display", cursive;
+  font-family: "ADLaM Display", cursive;
+  font-weight: 400;
+  font-size: 1.3rem;
 }
 body header nav ul li span:hover {
   text-shadow: 0 0 5px #0088ff, 0 0 10px #0088ff, 0 0 15px #0088ff, 0 0 20px #0088ff, 0 0 25px #0088ff, 0 0 30px #0088ff, 0 0 35px #0088ff;
@@ -13104,13 +13113,13 @@ body header nav .icon-nav {
   cursor: pointer;
   display: inline-block;
 }
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   body header nav .icon-nav {
     display: none;
   }
 }
 body header nav .icon-nav span {
-  background-color: #fff;
+  background-color: #ffffff;
   position: absolute;
   border-radius: 12px;
   transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
@@ -13142,8 +13151,11 @@ body header nav .open span:nth-child(3) {
   transform: rotate(-45deg);
   top: 13px;
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body header nav .menu-responsive {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: absolute;
     top: 5.5rem;
     right: -20rem;
@@ -13152,9 +13164,7 @@ body header nav .open span:nth-child(3) {
     transition: all 400ms ease;
     border-radius: 12px 0 0 12px;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0;
     background-color: rgba(28, 28, 28, 0.95);
     box-shadow: -10px 10px 10px #0c0c0c;
   }
@@ -13179,22 +13189,25 @@ body header nav .open span:nth-child(3) {
 }
 body #start {
   display: flex;
-  flex-direction: column;
+  justify-content: none;
   align-items: center;
+  flex-direction: column;
   padding: 1rem 0 1rem 0;
   margin-bottom: 4rem;
   margin-top: 2rem;
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body #start {
     margin-top: 3.5rem;
   }
 }
 body #start .helloWorld-style-container {
   display: flex;
+  justify-content: none;
+  align-items: none;
   width: 80%;
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body #start .helloWorld-style-container {
     flex-wrap: wrap;
   }
@@ -13217,7 +13230,7 @@ body #start .helloWorld-style-container .helloWorld-style .btn-modal-container .
   border-color: #2d618e;
   border-radius: 12px;
   display: flex;
-  justify-content: center;
+  justify-content: none;
   align-items: center;
   cursor: pointer;
   box-shadow: 10px 10px 10px #0c0c0c;
@@ -13245,6 +13258,7 @@ body #start .helloWorld-style-container .helloWorld-style .btn-modal-container .
 }
 body #start .helloWorld-style-container .helloWorld-style .btn-modal-container .btn-modal span {
   font-family: "ADLaM Display", cursive;
+  font-weight: 400;
   font-size: 1.1rem;
   color: #2d618e;
 }
@@ -13256,14 +13270,13 @@ body #start .helloWorld-style-container .helloWorld-style .modal-container {
   height: 100%;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
 }
 body #start .helloWorld-style-container .helloWorld-style .modal-container .slider-container {
   width: 65%;
 }
-@media only screen and (max-width: 830px) {
+@media (max-width: 830px) {
   body #start .helloWorld-style-container .helloWorld-style .modal-container .slider-container {
     width: 100%;
   }
@@ -13286,7 +13299,7 @@ body #start .helloWorld-style-container .helloWorld-style .modal-container .btn-
   border-radius: 12px;
   cursor: pointer;
 }
-@media only screen and (max-width: 830px) {
+@media (max-width: 830px) {
   body #start .helloWorld-style-container .helloWorld-style .modal-container .btn-close-modal {
     top: 3rem;
   }
@@ -13303,7 +13316,7 @@ body #start .helloWorld-style-container .helloWorld-style .modal-container .btn-
   width: 100%;
   height: 100%;
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body #start .helloWorld-style-container .profilePhoto-container {
     display: grid;
     place-content: center;
@@ -13318,7 +13331,7 @@ body #start .helloWorld-style-container .profilePhoto-container .profilePhoto {
   background-color: #1c1c1c;
   box-shadow: 15px 15px 10px #0c0c0c;
 }
-@media only screen and (max-width: 426px) {
+@media (max-width: 426px) {
   body #start .helloWorld-style-container .profilePhoto-container .profilePhoto {
     width: 15rem;
     height: 15rem;
@@ -13333,8 +13346,8 @@ body #start .skills-container {
 }
 body #start .skills-container .skills-btn {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   cursor: pointer;
 }
@@ -13376,13 +13389,16 @@ body #start .skills-container .skills-btn h3, body #start .skills-container .ski
   margin: 0 0.5rem;
 }
 body #start .skills-container .skills-content {
-  padding: 1rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: none;
+  padding: 1rem;
+  flex-wrap: wrap;
 }
 body #start .skills-container .skills-content .skills {
   display: flex;
+  justify-content: none;
+  align-items: none;
   margin: 0.5rem;
 }
 body #start .skills-container .skills-content .skills img {
@@ -13390,8 +13406,9 @@ body #start .skills-container .skills-content .skills img {
 }
 body #start .skills-container .skills-content .skills .skills-description {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
   margin-left: 0.5rem;
 }
 body #start .skills-container .skills-content .skills .skills-description .loading-bar {
@@ -13409,6 +13426,7 @@ body #start .skills-container .skills-content .skills .skills-description .loadi
 body #start .skills-container .skills-content .skills .skills-description .skill-name {
   display: flex;
   justify-content: space-between;
+  align-items: none;
 }
 body #start .skills-container .skills-content .skills .skills-description .skill-name span {
   font-family: "Poppins", sans-serif;
@@ -13416,26 +13434,29 @@ body #start .skills-container .skills-content .skills .skills-description .skill
 }
 body #projects {
   display: flex;
+  justify-content: none;
+  align-items: center;
   width: 100%;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 4rem;
   margin-top: 5rem;
 }
 body #projects .card-style-container {
   display: flex;
+  justify-content: none;
+  align-items: none;
   border-radius: 12px;
   background-color: #1c1c1c;
   box-shadow: 10px 10px 10px #0c0c0c;
   width: 80%;
   margin: 3rem 0;
 }
-@media only screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   body #projects .card-style-container {
     width: 90%;
   }
 }
-@media only screen and (max-width: 915px) {
+@media (max-width: 915px) {
   body #projects .card-style-container {
     flex-direction: column;
   }
@@ -13448,40 +13469,43 @@ body #projects .card-style-container .image-style img {
   width: 30rem;
   border-radius: 12px;
 }
-@media only screen and (max-width: 915px) {
+@media (max-width: 915px) {
   body #projects .card-style-container .image-style img {
     width: 100%;
   }
 }
 body #projects .card-style-container .description-style {
   display: flex;
+  justify-content: space-between;
+  align-items: none;
   flex-direction: column;
   padding: 1rem 1rem 0 1rem;
-  justify-content: space-between;
 }
 body #projects .card-style-container .description-style .btn-container {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: none;
 }
-@media only screen and (max-width: 915px) {
+@media (max-width: 915px) {
   body #projects .card-style-container .description-style .btn-container {
+    display: flex;
     justify-content: space-between;
+    align-items: none;
   }
 }
 body #projects .card-style-container .description-style .btn-container .btn-linkProject {
   display: flex;
+  justify-content: none;
+  align-items: center;
   padding: 0.5rem;
   border-color: #2d618e;
   border-style: solid;
-  align-items: center;
   cursor: pointer;
   border-radius: 12px;
   box-shadow: 10px 10px 10px #0c0c0c;
   text-decoration: none;
   margin-right: 2rem;
-  justify-content: center;
-  align-items: center;
 }
 body #projects .card-style-container .description-style .btn-container .btn-linkProject:hover {
   transition: 200ms;
@@ -13513,19 +13537,21 @@ body #projects .card-style-container .description-style .btn-container .btn-link
   color: #2d618e;
   text-decoration: none;
   font-family: "ADLaM Display", cursive;
+  font-weight: 400;
 }
-@media only screen and (max-width: 426px) {
+@media (max-width: 426px) {
   body #projects .card-style-container .description-style .btn-container .btn-linkProject span span {
     display: none;
   }
 }
 body #projects .card-style-container .description-style .btn-container .btn-gitHub {
   display: flex;
+  justify-content: none;
+  align-items: center;
   padding: 0.5rem;
   border-radius: 12px;
   border-color: #111111;
   border-style: solid;
-  align-items: center;
   cursor: pointer;
   box-shadow: 10px 10px 10px #0c0c0c;
   text-decoration: none;
@@ -13559,8 +13585,9 @@ body #projects .card-style-container .description-style .btn-container .btn-gitH
 body #projects .card-style-container .description-style .btn-container .btn-gitHub span {
   color: #959595;
   font-family: "ADLaM Display", cursive;
+  font-weight: 400;
 }
-@media only screen and (max-width: 426px) {
+@media (max-width: 426px) {
   body #projects .card-style-container .description-style .btn-container .btn-gitHub span span {
     display: none;
   }
@@ -13572,8 +13599,10 @@ body #projects .card-style-container .tools-styles h3, body #projects .card-styl
   margin-bottom: 0.5rem;
 }
 body #projects .card-style-container .tools-styles ul {
-  list-style: none;
   display: flex;
+  justify-content: none;
+  align-items: none;
+  list-style: none;
   flex-wrap: wrap;
 }
 body #projects .card-style-container .tools-styles ul li {
@@ -13585,14 +13614,16 @@ body #projects .card-style-container .tools-styles ul li img {
 }
 body #contact {
   display: flex;
-  flex-direction: column;
+  justify-content: none;
   align-items: center;
+  flex-direction: column;
   margin-bottom: 2rem;
 }
 body #contact section {
   display: flex;
-  width: 100%;
   justify-content: space-evenly;
+  align-items: none;
+  width: 100%;
   padding-top: 2rem;
   flex-wrap: wrap;
 }
@@ -13666,6 +13697,7 @@ body #contact section .form-style-container form .submitted-form-style {
 body #contact section ul {
   display: flex;
   justify-content: center;
+  align-items: none;
   flex-direction: column;
   padding: 0 1rem;
 }
@@ -13679,9 +13711,15 @@ body #contact section ul li a {
   margin-bottom: 1rem;
 }
 body #contact section ul li a svg {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.8rem;
+  width: 1.8rem;
   margin-right: 0.8rem;
+}
+@media (max-width: 426px) {
+  body #contact section ul li a svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
 }
 body #contact section ul li a .icon-whatsapp {
   color: #25D366;
@@ -13694,6 +13732,16 @@ body #contact section ul li a .icon-linkedin {
 }
 body #contact section ul li a .icon-instagram {
   color: #d87093;
+}
+body #contact section ul li a span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+@media (max-width: 426px) {
+  body #contact section ul li a span {
+    font-size: 1rem;
+  }
 }
 body #contact section ul li a .text-whatsapp:hover {
   transition: 100ms;
@@ -13719,6 +13767,8 @@ body #contact section .location-style {
   margin: 0;
   padding: 1rem;
   display: flex;
+  justify-content: none;
+  align-items: none;
   flex-direction: column;
 }
 body #contact section .location-style h3, body #contact section .location-style .h3 {
@@ -13730,12 +13780,12 @@ body #contact section .location-style iframe {
   border-radius: 12px;
   box-shadow: 10px 10px 10px #0c0c0c;
 }
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   body #contact section .location-style iframe {
     width: 85vw;
   }
 }
-@media only screen and (max-width: 426px) {
+@media (max-width: 426px) {
   body #contact section .location-style iframe {
     width: 90vw;
   }
@@ -13762,16 +13812,20 @@ body footer .socialNetwork-container {
 @media only screen and (max-width: 768px) {
   body footer .socialNetwork-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: none;
+    flex-wrap: wrap;
   }
 }
 body footer .socialNetwork-container .socialNetwork {
   display: flex;
+  justify-content: none;
+  align-items: none;
   padding: 0.5rem;
 }
 body footer .socialNetwork-container .socialNetwork a, body footer .socialNetwork-container .socialNetwork .a {
   display: flex;
+  justify-content: none;
   align-items: center;
   text-align: center;
   color: #ffffff;
@@ -13784,7 +13838,9 @@ body footer .socialNetwork-container .socialNetwork a svg, body footer .socialNe
   margin-right: 0.5rem;
 }
 body footer .socialNetwork-container .socialNetwork a span, body footer .socialNetwork-container .socialNetwork .a span {
-  font: 0.8rem "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

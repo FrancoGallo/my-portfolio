@@ -1,19 +1,17 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 12px;
+    @include flex (space-between, center);
+    border-radius: $curve;
     background: linear-gradient(to right, nth($colors, 4), #3a3144);
-    box-shadow: 10px 10px 10px nth($colors, 3);
+    box-shadow: $shadow;
     width: 85%;
     padding: 0.8rem;
-    align-items: center;
     margin-top: 1rem;
     z-index: 2;
 
-    @media only screen and (max-width:768px) {
+    @media (max-width: 768px) {
         width: 100%;
         margin-top: 0;
-        border-radius: 0 0 12px 12px;
+        border-radius: 0 0 $curve $curve;
         box-shadow: 0px 10px 10px nth($colors, 3);
         position: fixed;
         padding: 0.5rem 0.8rem;
@@ -29,7 +27,7 @@ nav {
     }
 
     ul {
-        display: flex;
+        @include flex(none, none);
 
         li {
             padding: 0 2rem 0 2rem;
@@ -37,7 +35,8 @@ nav {
             
             span {
                 cursor: pointer;
-                font: 400 1.3rem 'ADLaM Display', cursive;
+                @include btn;
+                font-size: 1.3rem;
 
                 &:hover {
                     text-shadow: 
@@ -55,20 +54,19 @@ nav {
 
     @import 'btnMenu';
 
-    @media only screen and (max-width:768px) {
+    @media (max-width:768px) {
 
         .menu-responsive {
+            @include flex(space-around, center);
             position: absolute;
             top: 5.5rem;
             right: -20rem;
             height: 20rem;
             width: 17rem;
             transition: all 400ms ease;
-            border-radius: 12px 0 0 12px;
+            border-radius: $curve 0 0 $curve;
             flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            padding: 1rem 0 1rem 0;
+            padding: 1rem 0;
             background-color: rgba(28, 28, 28, 0.95);
             box-shadow: -10px 10px 10px nth($colors, 3);
 
@@ -77,9 +75,9 @@ nav {
                 span {
                     border-color: nth($colors, 4);
                     border-style: solid;
-                    border-radius: 12px;
+                    border-radius: $curve;
                     padding: 0.5rem 2rem;
-                    box-shadow: 10px 10px 10px nth($colors, 3);
+                    box-shadow: $shadow;
                     background-color: nth($colors, 4);
                     font-size: 1.5rem;
 

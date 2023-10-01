@@ -1,17 +1,13 @@
 .btn-linkProject {
-    display: flex;
+    @include flex(none, center);
     padding: 0.5rem;
     border-color: nth($colors, 4);
     border-style: solid;
-    align-items: center;
     cursor: pointer;
-    border-radius: 12px;
-    box-shadow:  
-    10px 10px 10px nth($colors, 3);
+    border-radius: $curve;
+    box-shadow: $shadow;
     text-decoration: none;
     margin-right: 2rem;
-    justify-content: center;
-    align-items: center;
 
     &:hover {
         transition: 200ms;
@@ -57,9 +53,9 @@
     span {
         color: nth($colors, 4);
         text-decoration: none;
-        font-family: 'ADLaM Display', cursive;
+        @include btn;
 
-        @media only screen and (max-width:426px) {
+        @media (max-width:426px) {
             span {
                 display: none;
             }

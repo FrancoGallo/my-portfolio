@@ -1,17 +1,16 @@
 .card-style-container {
-    display: flex;
-    border-radius: 12px;
+    @include flex(none, none);
+    border-radius: $curve;
     background-color: nth($colors, 2);
-    box-shadow:  
-    10px 10px 10px nth($colors, 3);
+    box-shadow: $shadow;
     width: 80%;
     margin: 3rem 0;
 
-    @media only screen and (max-width:1000px) {
+    @media (max-width:1000px) {
         width: 90%;
     }
 
-    @media only screen and (max-width:915px) {
+    @media (max-width:915px) {
         flex-direction: column;
     }
 
@@ -21,27 +20,25 @@
        img {
             height: 100%;
             width: 30rem;
-            border-radius: 12px;
+            border-radius: $curve;
 
-            @media only screen and (max-width:915px) {
+            @media (max-width:915px) {
                 width: 100%;
             }
         } 
     }
     
     .description-style {
-        display: flex;
+        @include flex(space-between, none);
         flex-direction: column;
         padding: 1rem 1rem 0 1rem;
-        justify-content: space-between;
 
         .btn-container {
             width: 100%;
-            display: flex;
-            justify-content: flex-end;
+            @include flex(flex-end, none);
 
-            @media only screen and (max-width:915px) {
-                justify-content: space-between;
+            @media (max-width:915px) {
+                @include flex(space-between, none);
             }
 
             @import 'btnLinkProject';
@@ -61,8 +58,8 @@
             }
 
             ul {
+                @include flex(none, none);
                 list-style: none;
-                display: flex;
                 flex-wrap: wrap;
 
                 li {

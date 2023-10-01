@@ -1,6 +1,5 @@
 ul {
-    display: flex;
-    justify-content: center;
+    @include flex(center, none);
     flex-direction: column;
     padding: 0 1rem;
 
@@ -14,9 +13,14 @@ ul {
             margin-bottom: 1rem;
 
             svg {
-                height: 1.5rem;
-                width: 1.5rem;
+                height: 1.8rem;
+                width: 1.8rem;
                 margin-right: 0.8rem;
+
+                @media (max-width:426px) {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
             }
 
             .icon-whatsapp {
@@ -33,6 +37,15 @@ ul {
 
             .icon-instagram {
                 color: nth($colors , 12);
+            }
+
+            span {
+                @include par;
+                font-size: 1.2rem;
+
+                @media (max-width:426px) {
+                    font-size: 1rem;
+                }
             }
 
             .text-whatsapp:hover {

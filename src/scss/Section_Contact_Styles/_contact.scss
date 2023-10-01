@@ -1,13 +1,11 @@
 #contact {
-    display: flex;
+    @include flex(none, center);
     flex-direction: column;
-    align-items: center;
     margin-bottom: 2rem;
   
     section {
-      display: flex;
+      @include flex(space-evenly, none);
       width: 100%;
-      justify-content: space-evenly;
       padding-top: 2rem;
       flex-wrap: wrap;
   

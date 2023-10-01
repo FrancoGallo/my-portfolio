@@ -9,7 +9,7 @@
         width: 50%;
         height: 0.3rem;
         background-color: nth($colors , 13);
-        border-radius: 12px;
+        border-radius: $curve;
         transition: .3s cubic-bezier(.8, .5, .2, 1.4);
     }
 

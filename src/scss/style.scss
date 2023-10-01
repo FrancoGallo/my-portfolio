@@ -1,15 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&family=Poppins:ital,wght@0,400;1,800&display=swap');
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-// Typography:
-//    font-family: 'ADLaM Display', cursive; [font-weight: 400] (buttons)
-//    font-family: 'Lilita One', cursive; [font-weight: 400] (titles)
-//    font-family: 'Poppins', sans-serif; [font-weight: 400] (paragraphs) / [font-weight: 800] (subtitles)
-
-// Sintaxis:
-//      font: (font-weight)  (font-size)/(line-height)  (font-family)
-
-@import 'variables';
+@import 'variables'; // All the app variables here
 
 * {
     margin: 0;
@@ -26,25 +18,25 @@ body {
   color: nth($colors , 13);
 
   h1 {
-    font: 400 3.5rem 'Lilita One', cursive;
+    @include tit;
+    font-size: 3.5rem;
   }
 
   h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
+    @include sub;
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
 
   h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
+    @include sub;
     font-size: 1.5rem;
     margin: 0;
   }
 
   p, li {
-    font: 400 1rem/1.5 'Poppins', sans-serif;
+    @include par;
+    line-height: 1.8rem;
     margin: 0;
   }
 

@@ -1,7 +1,5 @@
 footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(space-around, center);
     background: linear-gradient(to right, nth($colors , 4), #3a3144);
     padding: 15px 0 15px 0;
     flex-wrap: wrap;
@@ -20,18 +18,16 @@ footer {
       grid-template-columns: auto auto;
 
       @media only screen and (max-width:768px) {
-        display: flex;
+        @include flex(space-around, none);
         flex-wrap: wrap;
-        justify-content: space-around;
       }
 
       .socialNetwork {
-        display: flex;
+        @include flex(none, none);
         padding: 0.5rem;
 
         a, .a {
-          display: flex;
-          align-items: center;
+          @include flex(none, center);
           text-align: center;
           color: nth($colors , 13);
           text-decoration: none;
@@ -44,7 +40,8 @@ footer {
           }
 
           span {
-            font: 0.8rem 'Poppins', sans-serif;;
+            @include par;
+            font-size: 0.8rem;
           }
         }
       }

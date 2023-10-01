@@ -5,13 +5,10 @@
       padding: 0.6rem;
       border-style: solid;
       border-color: nth($colors , 4);
-      border-radius: 12px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      border-radius: $curve;
+      @include flex(none, center);
       cursor: pointer;
-      box-shadow:  
-      10px 10px 10px nth($colors , 3);
+      box-shadow: $shadow;
       margin-top: 1rem;
 
       &:hover {
@@ -29,8 +26,7 @@
 
       &:active {
         transition: 100ms;
-        box-shadow:  
-        inset 5px 5px 10px nth($colors , 3);
+        box-shadow: inset 5px 5px 10px nth($colors , 3);
       }
 
       svg {
@@ -41,7 +37,7 @@
       }
 
       span {
-        font-family: 'ADLaM Display', cursive;
+        @include btn;
         font-size: 1.1rem;
         color: nth($colors , 4);
       }

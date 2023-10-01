@@ -1,21 +1,18 @@
 .skills-container {
-    border-radius: 12px;
+    border-radius: $curve;
     background-color: nth($colors, 2);
-    box-shadow:  
-    10px 10px 10px nth($colors, 3);
+    box-shadow: $shadow;
     width: 80%;
     margin-top: 1.5rem;
 
     .skills-btn {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex(space-between, center);
         padding: 1rem;
         cursor: pointer;
 
         &:hover {
             background-color: lighten(nth($colors, 2), 3%);
-            border-radius: 12px;
+            border-radius: $curve;
         }
 
         @import 'arrowSkills';

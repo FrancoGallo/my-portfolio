@@ -1,10 +1,9 @@
 #projects {
-    display: flex;
+    @include flex(none, center);
     width: 100%;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 4rem;
     margin-top: 5rem;
   
     @import "componentsStyle/card";
-  }
+}

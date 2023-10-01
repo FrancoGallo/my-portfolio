@@ -1,6 +1,5 @@
 header {
-    display: flex;
-    justify-content: center;
+    @include flex(center, none);
 
     @import "componentsStyle/navbar";
 }

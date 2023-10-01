@@ -1,8 +1,8 @@
 .helloWorld-style-container {
-    display: flex;
+    @include flex(none, none);
     width: 80%;
 
-    @media only screen and (max-width:768px) {
+    @media (max-width:768px) {
       flex-wrap: wrap;
     }
     
@@ -24,9 +24,8 @@
 
     .profilePhoto-container {
 
-      @media only screen and (max-width:768px) {
-        display: grid;
-        place-content: center;
+      @media (max-width:768px) {
+        @include center;
         width: 100%;
       }
       
@@ -38,7 +37,7 @@
         background-color: nth($colors , 2);
         box-shadow: 15px 15px 10px nth($colors , 3);
 
-        @media only screen and (max-width:426px) {
+        @media (max-width:426px) {
           width: 15rem;
           height: 15rem;
         }

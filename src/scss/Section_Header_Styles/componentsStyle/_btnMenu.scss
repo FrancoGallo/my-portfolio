@@ -6,18 +6,18 @@
     cursor: pointer;
     display: inline-block;
 
-    @media only screen and (min-width:768px) {
+    @media (min-width:768px) {
         display: none;
     }
 
     span {
-        background-color:#fff;
+        background-color:nth($colors, 13);
         position: absolute;
-        border-radius: 12px;
+        border-radius: $curve;
         transition: .3s cubic-bezier(.8, .5, .2, 1.4);
-        width:100%;
+        width: 100%;
         height: 4px;
-        transition-duration: 400ms
+        transition-duration: 400ms;
     }
 
     span:nth-child(1){

@@ -1,11 +1,10 @@
 .skills-content {
+    @include flex(space-between, none);
     padding: 1rem;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     .skills {
-        display: flex;
+        @include flex(none, none);
         margin: 0.5rem;
 
         img {
@@ -13,9 +12,8 @@
         }
 
         .skills-description {
-            display: flex;
+            @include flex(space-between, none);
             flex-direction: column;
-            justify-content: space-between;
             margin-left: 0.5rem;
 
             .loading-bar {
@@ -33,12 +31,10 @@
             }
 
             .skill-name {
-                display: flex;
-                justify-content: space-between;
+                @include flex(space-between, none);
 
                 span {
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: 800;
+                    @include sub;
                 }
             }
         }

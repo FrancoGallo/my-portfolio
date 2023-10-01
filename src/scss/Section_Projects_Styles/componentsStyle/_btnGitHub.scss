@@ -1,13 +1,11 @@
 .btn-gitHub {
-    display: flex;
+    @include flex(none, center);
     padding: 0.5rem;
-    border-radius: 12px;
+    border-radius: $curve;
     border-color: nth($colors, 6);
     border-style: solid;
-    align-items: center;
     cursor: pointer;
-    box-shadow:  
-    10px 10px 10px nth($colors, 3);
+    box-shadow: $shadow;
     text-decoration: none;
 
     &:hover {
@@ -53,9 +51,9 @@
 
     span {
         color: nth($colors , 8);
-        font-family: 'ADLaM Display', cursive;
+        @include btn;
 
-        @media only screen and (max-width:426px) {
+        @media (max-width:426px) {
             span {
                 display: none;
             }

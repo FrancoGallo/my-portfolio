@@ -1,3 +1,4 @@
+// All colors in the app
 $colors:
     // General colors
     #1e1e1e, //1. bg body
@@ -22,3 +23,40 @@ $colors:
     // Typography
     #ffffff, //13. the typography of the app
 ;
+
+// Simple variables
+$curve: 12px; // Component border throughout the app
+$shadow: 10px 10px 10px nth($colors, 3); // Most used shadow
+
+// All fonts in the app
+@mixin btn { // For buttons
+	font-family: 'ADLaM Display', cursive;
+	font-weight: 400;
+}
+
+@mixin tit { // For Titles
+	font-family: 'Lilita One', cursive;
+	font-weight: 400;
+}
+
+@mixin par { // For paragraphs
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+
+@mixin sub { // For subtitles
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+}
+
+// Shortcuts
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin center {
+    display: grid;
+    place-content: center;
+}
