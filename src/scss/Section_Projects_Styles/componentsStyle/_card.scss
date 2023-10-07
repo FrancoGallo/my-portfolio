@@ -49,26 +49,16 @@
 
         .text-style {
             margin: 2.5rem 0 2rem 0;
-        }
 
-        .tools-styles {
-
-            h3 {
+            .descriptionApp {
                 margin-bottom: 0.5rem;
             }
 
-            ul {
-                @include flex(none, none);
-                list-style: none;
-                flex-wrap: wrap;
-
-                li {
-                    margin: 0 1rem 1rem 0;
-
-                    img {
-                        height: 2rem;
-                        width: 3rem;
-                    }
+            p {
+                span {
+                    font-size: 1.2rem;
+                    color: nth($colors, 4);
+                    font-weight: 800;
                 }
             }
         }

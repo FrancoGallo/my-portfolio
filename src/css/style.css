@@ -13203,7 +13203,7 @@ body #start {
 }
 body #start .helloWorld-style-container {
   display: flex;
-  justify-content: none;
+  justify-content: center;
   align-items: none;
   width: 80%;
 }
@@ -13218,8 +13218,12 @@ body #start .helloWorld-style-container .helloWorld-style {
 body #start .helloWorld-style-container .helloWorld-style h1, body #start .helloWorld-style-container .helloWorld-style .h1 {
   margin-bottom: 1rem;
 }
-body #start .helloWorld-style-container .helloWorld-style p {
-  width: 95%;
+body #start .helloWorld-style-container .helloWorld-style .descriptionText-container p {
+  margin-bottom: 0.5rem;
+}
+body #start .helloWorld-style-container .helloWorld-style .descriptionText-container p span {
+  font-size: 1.2rem;
+  color: #0088ff;
 }
 body #start .helloWorld-style-container .helloWorld-style .btn-modal-container {
   display: inline-block;
@@ -13270,8 +13274,9 @@ body #start .helloWorld-style-container .helloWorld-style .modal-container {
   height: 100%;
   top: 0;
   left: 0;
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body #start .helloWorld-style-container .helloWorld-style .modal-container .slider-container {
   width: 65%;
@@ -13316,12 +13321,9 @@ body #start .helloWorld-style-container .helloWorld-style .modal-container .btn-
   width: 100%;
   height: 100%;
 }
-@media (max-width: 768px) {
-  body #start .helloWorld-style-container .profilePhoto-container {
-    display: grid;
-    place-content: center;
-    width: 100%;
-  }
+body #start .helloWorld-style-container .profilePhoto-container {
+  display: grid;
+  place-content: center;
 }
 body #start .helloWorld-style-container .profilePhoto-container .profilePhoto {
   width: 20rem;
@@ -13595,22 +13597,13 @@ body #projects .card-style-container .description-style .btn-container .btn-gitH
 body #projects .card-style-container .text-style {
   margin: 2.5rem 0 2rem 0;
 }
-body #projects .card-style-container .tools-styles h3, body #projects .card-style-container .tools-styles .h3 {
+body #projects .card-style-container .text-style .descriptionApp {
   margin-bottom: 0.5rem;
 }
-body #projects .card-style-container .tools-styles ul {
-  display: flex;
-  justify-content: none;
-  align-items: none;
-  list-style: none;
-  flex-wrap: wrap;
-}
-body #projects .card-style-container .tools-styles ul li {
-  margin: 0 1rem 1rem 0;
-}
-body #projects .card-style-container .tools-styles ul li img {
-  height: 2rem;
-  width: 3rem;
+body #projects .card-style-container .text-style p span {
+  font-size: 1.2rem;
+  color: #2d618e;
+  font-weight: 800;
 }
 body #contact {
   display: flex;

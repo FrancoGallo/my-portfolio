@@ -65,19 +65,13 @@ const Card = () => {
               </div>
               
               <div className='text-style'>
-                <p>
-                  <b>{data.titleProject}</b> 
-                  <br/>
+                <p className='descriptionApp'>
                   {data.description}
                 </p>
-              </div>
 
-              <div className='tools-styles'>
-                <h3>Herramientas:</h3>
-
-                <ul>
-                  <li><img src={data.img} alt="" /></li>
-                </ul>
+                <p>
+                  <span>Tecnologías usadas en la app:</span> {data.skills}
+                </p>
               </div>              
             </div>
           </section>

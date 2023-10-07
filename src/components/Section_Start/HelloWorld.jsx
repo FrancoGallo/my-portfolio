@@ -8,11 +8,26 @@ const HelloWorld = () => {
   return (
     <div className='helloWorld-style'>
       <h1>¡Hola mundo!</h1>
+
+      <div className='descriptionText-container'>
+        <p>
+          Hace un tiempo descubrí todo este mundo sobre el desarrollo de aplicaciones y quedé fascinado. 
+          Empecé con unos pequeños cursos con CoderHouse y, desde entonces, seguí estudiando de forma autodidacta 
+          complementando con mas cursos y otras fuentes.
+        </p>
+
+        <p>
+          Mi amor por la programación va más allá de simplemente escribir código. Me encanta colaborar con equipos 
+          multifuncionales para transformar conceptos en proyectos exitosos.
+        </p>
+
+        <p>
+          Siempre en busqueda de poder mejorar las tegnologías que ya manejo y aprender nuevas. 
+          Soy <span>Franco Gallo</span> y espero contactes conmigo <span>&#128578;</span>. 
+        </p>
+      </div>
       
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed labore ducimus quasi dolores. Voluptatibus, obcaecati rerum! Vitae, ducimus quis placeat deserunt sequi illum a dolorum est impedit, mollitia modi?
-        Harum tenetur dolorem illum iste quis ipsa ex magnam commodi a molestiae ipsam possimus rerum aliquid, maxime autem ad minima! Laudantium nesciunt accusantium sit! Quo dolore recusandae debitis facere delectus?
-      </p>
+      
 
       <div className='btn-modal-container' onClick={toggle}>
         <div className='btn-modal'>

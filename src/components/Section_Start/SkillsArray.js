@@ -3,21 +3,21 @@ const skills = [
     {
         name: 'HTML', 
         img: 'https://i.imgur.com/WcNRki1.png', 
-        percentage: '70%',
+        percentage: '80%',
         type: 'language' 
     },
 
     {
         name: 'CSS', 
         img: 'https://i.imgur.com/gMmtajT.png', 
-        percentage: '70%', 
+        percentage: '75%', 
         type: 'language'
     },
     
     {
         name: 'SASS', 
         img: 'https://i.imgur.com/GoynSor.png', 
-        percentage: '60%',
+        percentage: '70%',
         type: 'others' 
     },
     

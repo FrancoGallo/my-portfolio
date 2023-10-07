@@ -1,5 +1,5 @@
 .helloWorld-style-container {
-    @include flex(none, none);
+    @include flex(center, none);
     width: 80%;
 
     @media (max-width:768px) {
@@ -13,8 +13,16 @@
         margin-bottom: 1rem;
       }
 
-      p {
-        width: 95%;
+      .descriptionText-container {
+
+        p {
+          margin-bottom: 0.5rem;
+
+          span {
+            font-size: 1.2rem;
+            color: nth($colors , 5);
+          }
+        }
       }
 
       @import 'btnModal';
@@ -23,12 +31,8 @@
     }
 
     .profilePhoto-container {
-
-      @media (max-width:768px) {
-        @include center;
-        width: 100%;
-      }
-      
+      @include center;
+       
       .profilePhoto {
         width: 20rem;
         height: 20rem;

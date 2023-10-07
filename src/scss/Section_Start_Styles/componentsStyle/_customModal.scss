@@ -6,7 +6,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  @include center;
+  @include flex(center, center);
 
   .slider-container {
     width: 65%;
