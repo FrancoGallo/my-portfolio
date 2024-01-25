@@ -10,10 +10,9 @@ const HelloWorld = () => {
       <h1>¡Hola mundo!</h1>
 
       <div className='descriptionText-container'>
-        <p>
-          Hace un tiempo descubrí todo este mundo sobre el desarrollo de aplicaciones y quedé fascinado. 
-          Empecé con unos pequeños cursos con CoderHouse y, desde entonces, seguí estudiando de forma autodidacta 
-          complementando con mas cursos y otras fuentes.
+        <p> 
+          Empecé con unos pequeños cursos y, desde entonces, seguí estudiando de forma autodidacta 
+          complementando con más cursos y otras fuentes.
         </p>
 
         <p>

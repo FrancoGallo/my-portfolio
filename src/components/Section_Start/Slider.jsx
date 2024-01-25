@@ -1,28 +1,6 @@
 import React, { useState } from 'react';
+import Certificate from './SliderArray';
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators } from 'reactstrap';
-
-const Certificate = [
-  {
-    src: 'images/html.png',
-    altText: 'Certificate HTML and CSS',
-    key: 1,
-  },
-  {
-    src: 'images/javascript.png',
-    altText: 'Certificate JavaScript',
-    key: 2,
-  },
-  {
-    src: 'images/react.png',
-    altText: 'Certificate React',
-    key: 3,
-  },
-  {
-    src: 'images/frontend react.png',
-    altText: 'Certificate FrontEnd React',
-    key: 4,
-  }
-];
 
 const Slider = (args) => {
   const [activeIndex, setActiveIndex] = useState(0);
